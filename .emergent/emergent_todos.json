@@ -1,30 +1,22 @@
 [
   {
-    "content": "A0: Проинспектировать orphaned route-файлы, отфильтровать GET-only",
-    "status": "completed"
+    "content": "B1: Инвентаризация данных — какие исторические exchange-коллекции есть в trading_os + trading_cases timeline",
+    "status": "in_progress"
   },
   {
-    "content": "A1: Создать read-only оболочку и подключить в server.py",
-    "status": "completed"
+    "content": "B2: Выбрать dedup-правило (8–20 unique moments), одно событие на временной окно",
+    "status": "pending"
   },
   {
-    "content": "A1.5: Перезапустить backend, верифицировать, что живые endpoints не сломаны",
-    "status": "completed"
+    "content": "B3: Написать forensic_exchange_intelligence.py: join с trading_cases, features, direction test, bucket test, rule test",
+    "status": "pending"
   },
   {
-    "content": "A2: Написать smoke-тест",
-    "status": "completed"
+    "content": "B4: Запустить, записать отчёт (jsonl + markdown). Verdict per feature: ALPHA / NO_ALPHA / RESERVE",
+    "status": "pending"
   },
   {
-    "content": "A3: Создать /api/admin/branches/health endpoint",
-    "status": "completed"
-  },
-  {
-    "content": "A3 UI: Добавить в frontend мини-панель статусов веток",
-    "status": "completed"
-  },
-  {
-    "content": "Финал: Обновить plan.md и отчитаться",
-    "status": "completed"
+    "content": "B5: Предъявить отчёт архитектору для интерпретации",
+    "status": "pending"
   }
 ]
