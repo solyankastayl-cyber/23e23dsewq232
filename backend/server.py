@@ -2241,6 +2241,70 @@ try:
 except Exception as e:
     print(f"[Routes] Fractal Intelligence not available: {e}")
 
+# ────────────────────────────────────────────────────────────────────────────
+# STAGE A — READ-ONLY visibility restoration of orphaned TA branches
+# ────────────────────────────────────────────────────────────────────────────
+# Per architect directive (2026-05-04): restore HTTP visibility ONLY.
+# All five routers below expose ONLY GET endpoints (verified — zero POST,
+# zero PUT, zero DELETE). They do NOT participate in the trading loop, do
+# NOT feed the prediction aggregator, do NOT touch execution, and do NOT
+# alter weights. Sole purpose: make orphaned branches inspectable so that
+# Stage B (forensic) can be performed against a stable surface.
+#
+# Branches restored:
+#   • Exchange Intelligence  → /api/exchange-intelligence/*
+#   • Fractal (asset)        → /api/v1/fractal-assets/*
+#   • Fractal (context)      → /api/v1/fractal-intelligence/*
+#   • Macro-Fractal          → /api/v1/macro-fractal/*
+#   • Cross-Asset            → /api/v1/cross-asset/*
+#
+# Each import is wrapped in its own try/except so a runtime failure in any
+# branch cannot bring down the rest of the application.
+# ────────────────────────────────────────────────────────────────────────────
+try:
+    from modules.exchange_intelligence.exchange_intel_routes import router as exchange_intel_router
+    app.include_router(exchange_intel_router)
+    print("[Routes][Stage A] Exchange Intelligence router registered (READ-ONLY)")
+except Exception as e:
+    print(f"[Routes][Stage A] Exchange Intelligence not available: {e}")
+
+try:
+    from modules.fractal_intelligence.asset_fractal_routes import router as asset_fractal_router
+    app.include_router(asset_fractal_router)
+    print("[Routes][Stage A] Asset Fractal router registered (READ-ONLY)")
+except Exception as e:
+    print(f"[Routes][Stage A] Asset Fractal not available: {e}")
+
+try:
+    from modules.fractal_intelligence.fractal_context_routes import router as fractal_context_router
+    app.include_router(fractal_context_router)
+    print("[Routes][Stage A] Fractal Context router registered (READ-ONLY)")
+except Exception as e:
+    print(f"[Routes][Stage A] Fractal Context not available: {e}")
+
+try:
+    from modules.macro_fractal_brain.macro_fractal_routes import router as macro_fractal_router
+    app.include_router(macro_fractal_router)
+    print("[Routes][Stage A] Macro-Fractal router registered (READ-ONLY)")
+except Exception as e:
+    print(f"[Routes][Stage A] Macro-Fractal not available: {e}")
+
+try:
+    from modules.cross_asset_intelligence.cross_asset_routes import router as cross_asset_router
+    app.include_router(cross_asset_router)
+    print("[Routes][Stage A] Cross-Asset router registered (READ-ONLY)")
+except Exception as e:
+    print(f"[Routes][Stage A] Cross-Asset not available: {e}")
+
+# Stage A admin / visibility surface — branches health aggregator.
+try:
+    from modules.stage_a_visibility.routes import router as stage_a_visibility_router
+    app.include_router(stage_a_visibility_router)
+    print("[Routes][Stage A] Branches health aggregator registered (READ-ONLY)")
+except Exception as e:
+    print(f"[Routes][Stage A] Branches health aggregator not available: {e}")
+# ────────────────────────────────────────────────────────────────────────────
+
 try:
     from modules.research.hypothesis_engine.hypothesis_routes import router as hypothesis_router
     app.include_router(hypothesis_router)

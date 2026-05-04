@@ -1,38 +1,30 @@
 [
   {
-    "content": "Аудит-0: Собрать существующие аудит-доки и получить контекст",
+    "content": "A0: Проинспектировать orphaned route-файлы, отфильтровать GET-only",
     "status": "completed"
   },
   {
-    "content": "Аудит-1: TA Core — карта всех модулей анализа рынка",
+    "content": "A1: Создать read-only оболочку и подключить в server.py",
     "status": "completed"
   },
   {
-    "content": "Аудит-1: TA Core — найти точки входа каждой ветки",
+    "content": "A1.5: Перезапустить backend, верифицировать, что живые endpoints не сломаны",
     "status": "completed"
   },
   {
-    "content": "Аудит-1: TA Core — определить dead/orphaned модули",
+    "content": "A2: Написать smoke-тест",
     "status": "completed"
   },
   {
-    "content": "Аудит-2: Predictions — трассировка Step 6→7→8→9→10→11→12 и выявление обрывов",
+    "content": "A3: Создать /api/admin/branches/health endpoint",
     "status": "completed"
   },
   {
-    "content": "Аудит-2: Predictions — где теряются сигналы от TA Core",
+    "content": "A3 UI: Добавить в frontend мини-панель статусов веток",
     "status": "completed"
   },
   {
-    "content": "Аудит-3: Trading — как Predictions попадают в execution",
-    "status": "completed"
-  },
-  {
-    "content": "Аудит-3: Trading — найти гейты, пауз-флаги, заблокированные ветки",
-    "status": "completed"
-  },
-  {
-    "content": "Финал: Собрать DEEP_AUDIT_REPORT.md",
+    "content": "Финал: Обновить plan.md и отчитаться",
     "status": "completed"
   }
 ]

@@ -75,6 +75,7 @@ const MLMonitoringPage = lazy(() => import("./pages/MLMonitoringPage"));
 // Admin Panel Pages
 const AdminLoginPage = lazy(() => import("./pages/admin/AdminLoginPage"));
 const AdminDashboardPage = lazy(() => import("./pages/admin/AdminDashboardPage"));
+const StageABranchesPage = lazy(() => import("./pages/admin/StageABranchesPage"));
 // REMOVED: AdminMLPage (dead → redirected to /admin/ml/overview)
 // REMOVED: AdminMLOpsPage (dead route → redirected to ML Overview)
 const AdminProvidersPage = lazy(() => import("./pages/admin/AdminProvidersPage"));
@@ -428,6 +429,7 @@ function App() {
               <Route path="/admin/login" element={<AdminLoginPage />} />
               <Route path="/admin/dashboard" element={<Navigate to="/admin/onchain" replace />} />
               <Route path="/admin" element={<AdminDashboardPage />} />
+              <Route path="/admin/stage-a" element={<StageABranchesPage />} />
 
               {/* On-chain Admin — Unified Control Page (6 tabs) */}
               <Route path="/admin/onchain" element={<AdminOnchainPage />} />

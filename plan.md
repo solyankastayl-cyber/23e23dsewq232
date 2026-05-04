@@ -166,3 +166,79 @@ Per architect directive: next R&D work is on the **TA Prediction Intelligence
 block** (calibration / data health / debug / decision layer), NOT on trading
 execution. Safe extension surface is enumerated in
 `TA_PREDICTION_INTELLIGENCE_MAP.md` §6.
+
+---
+
+## 6) Stage A — read-only restoration of orphaned TA branches (2026-05-04, ✅ DONE)
+
+Architect directive (verbatim, RU): «делать Stage A: read-only restore of Fractal +
+Exchange + TA Engine endpoints. ❌ не подключать это в execution. ❌ не давать этим
+модулям голос в aggregator. ❌ не менять weights. ❌ не включать auto-trading
+decisions. ❌ не объединять три prediction-системы сразу.»
+
+### Что сделано (точно по объёму этапа A)
+| Sub-task | Что | Где | Статус |
+|---|---|---|---|
+| A0 | Инспекция 5 orphaned route-файлов (Exchange Intel, Asset-Fractal, Fractal-Context, Macro-Fractal, Cross-Asset) — все 33 endpoints **исключительно GET** | `/app/backend/modules/{exchange_intelligence, fractal_intelligence, macro_fractal_brain, cross_asset_intelligence}` | ✅ |
+| A1 | Read-only регистрация в `server.py` под защитой try/except, явный комментарий «STAGE A — READ-ONLY visibility» | `/app/backend/server.py` после блока fractal_market | ✅ |
+| A2 | Smoke-тест: health + payload + BTCUSDT/ETHUSDT + проверка отсутствия non-GET методов + регрессия живых endpoints | `/app/scripts/smoke_stage_a.py` | ✅ |
+| A3 | Aggregator endpoints `/api/admin/branches/health` + `/summary` (cache 60s, безопасный probe, никаких записей) | `/app/backend/modules/stage_a_visibility/routes.py` | ✅ |
+| A3-UI | React-страница `/admin/stage-a` — Branches Health Panel | `/app/frontend/src/pages/admin/StageABranchesPage.jsx` | ✅ |
+
+### Подключённые ветки (только GET, +35 endpoints)
+
+| Branch | Prefix | GET endpoints | Status |
+|---|---|---|---|
+| Exchange Intelligence | `/api/exchange-intelligence/*` | 12 | ✅ ALIVE |
+| Fractal — Asset (BTC/SPX/DXY) | `/api/v1/fractal-assets/*` | 6 | ✅ ALIVE |
+| Fractal — Context | `/api/v1/fractal-intelligence/*` | 4 | ✅ ALIVE |
+| Macro-Fractal Brain | `/api/v1/macro-fractal/*` | 4 | ✅ ALIVE |
+| Cross-Asset Intelligence | `/api/v1/cross-asset/*` | 7 | ✅ ALIVE |
+| **Stage A admin** | `/api/admin/branches/*` | 2 | ✅ |
+
+`openapi.json` total: 953 → **988** endpoints.
+
+### Гарантии read-only (проверены автоматически в smoke-тесте)
+- ✅ 0 не-GET методов на 6 префиксах Stage A
+- ✅ 0 модификаций `aggregator` / `engines` / `conflict_resolver` / `weights`
+- ✅ 0 модификаций `signal_generator` / `execution/bridge.py` / `position_exit_manager`
+- ✅ 0 коллекций MongoDB записаны Stage A кодом
+- ✅ Регрессия: 6/6 prior endpoints (`/api/system/health`, `/api/p27/status`, `/api/auto-safety/state`, `/api/ta-prediction-intelligence/health`, `/api/ta/registry`, `/api/fractal/v2.1/signal`) — все 200 OK
+
+### Состояние агрегатора (snapshot после A)
+```
+Alive 8/8 · Dead 0
+  ✅ exchange_intelligence            (Stage A · restored)
+  ✅ fractal_assets                   (Stage A · restored)
+  ✅ fractal_intelligence             (Stage A · restored)
+  ✅ macro_fractal                    (Stage A · restored)
+  ✅ cross_asset                      (Stage A · restored)
+  ✅ fractal_market                   (live)
+  ✅ ta_engine                        (live)
+  ✅ ta_prediction_intelligence       (live)
+```
+
+### Артефакты Stage A
+- `/app/backend/modules/stage_a_visibility/routes.py` — aggregator (read-only)
+- `/app/backend/modules/stage_a_visibility/__init__.py`
+- `/app/scripts/smoke_stage_a.py` — повторно прогоняемый regression smoke
+- `/app/frontend/src/pages/admin/StageABranchesPage.jsx` — UI-панель
+- Routes block в `server.py` — 60 строк read-only с явной маркировкой
+
+### Что НЕ делалось (по директиве, явно)
+- ❌ не давали этим модулям голос в `ta_prediction_aggregator`
+- ❌ не подключали к `ExecutionBridge`
+- ❌ не меняли `_compute_current_regime`
+- ❌ не меняли `position_exit_manager` пороги
+- ❌ не объединяли три prediction-системы (legacy + middle + new)
+- ❌ не меняли weights в `MacroFractalEngine` или `ExchangeContextAggregator`
+
+### Готово к Stage B
+Все 5 restored ветвей дают непустой payload по BTCUSDT/ETHUSDT. Это значит,
+что форензик Stage B можно гонять напрямую через `/api/admin/branches/health`
++ через каждую ветку отдельно. Никаких новых HTTP «дыр» сюрпризом не появится —
+поверхность стабильна.
+
+Команда на следующий шаг: дайте указание «B» — и для каждой ветки запустим
+форензик-цикл: история payload → корреляция с `trading_cases.realized_pnl_pct` →
+вердикт alpha / no-alpha / reserve.
