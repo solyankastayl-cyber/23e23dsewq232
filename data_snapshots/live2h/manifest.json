@@ -1,0 +1,22 @@
+{
+  "taken_at": "2026-04-26T08:58:32.749051+00:00",
+  "phase": "LIVE-2H",
+  "collections": {
+    "regime_controls": {
+      "count": 4,
+      "query": "{}"
+    },
+    "trading_cases": {
+      "count": 15,
+      "query": "{'close_reason': {'$regex': '^LIVE2H_'}}"
+    },
+    "regime_guard_events": {
+      "count": 1,
+      "query": "{'timestamp': {'$gte': datetime.datetime(2026, 4, 25, 14, 40, tzinfo=datetime.timezone.utc)}}"
+    },
+    "position_exit_events": {
+      "count": 78,
+      "query": "{'phase': 'LIVE-2'}"
+    }
+  }
+}

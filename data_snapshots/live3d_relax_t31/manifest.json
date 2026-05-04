@@ -1,0 +1,29 @@
+{
+  "taken_at": "2026-05-03T21:44:45.919748+00:00",
+  "phase": "LIVE-2H",
+  "collections": {
+    "regime_controls": {
+      "count": 6,
+      "query": "{}"
+    },
+    "trading_cases": {
+      "count": 41,
+      "query": "{'close_reason': {'$regex': '^LIVE2H_'}}"
+    },
+    "regime_guard_events": {
+      "count": 1,
+      "query": "{'timestamp': {'$gte': datetime.datetime(2026, 4, 25, 14, 40, tzinfo=datetime.timezone.utc)}}"
+    },
+    "position_exit_events": {
+      "count": 129,
+      "query": "{'phase': 'LIVE-2'}"
+    }
+  },
+  "snapshot_tag": "live3d_relax_t31",
+  "context": {
+    "purpose": "post-LIVE-3d relaxation measuring window, t=31min",
+    "min_adjusted_confidence": 0.45,
+    "note": "relaxation window; read-only snapshot for rollback safety",
+    "related_forensic": "/app/scripts/forensic_live3e_vol_side_symbol.py"
+  }
+}

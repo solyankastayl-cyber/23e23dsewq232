@@ -1,0 +1,96 @@
+{
+  "version": "pattern_families_v2",
+  "enabled": true,
+  "volatilityFilter": {
+    "enabled": true,
+    "atrMultiplier": 0.8,
+    "atrPeriod": 14,
+    "smaPeriod": 14
+  },
+  "trendAlignment": {
+    "enabled": true,
+    "emaShortPeriod": 50,
+    "emaLongPeriod": 200,
+    "requireBothAligned": false
+  },
+  "volumeBreakout": {
+    "enabled": true,
+    "volumeMultiplier": 1.4,
+    "smaPeriod": 20
+  },
+  "atrRiskManagement": {
+    "enabled": true,
+    "stopLossATR": 1.5,
+    "takeProfitATR": 2.5
+  },
+  "disabledStrategies": [
+    "LIQUIDITY_SWEEP",
+    "LIQUIDITY_SWEEP_HIGH",
+    "LIQUIDITY_SWEEP_LOW",
+    "RANGE_REVERSAL"
+  ],
+  "indicators": {
+    "total": 15,
+    "list": [
+      "sma",
+      "ema",
+      "rsi",
+      "macd",
+      "bollinger",
+      "atr",
+      "vwap",
+      "supertrend",
+      "volume_profile",
+      "cci",
+      "williams_r",
+      "ichimoku",
+      "parabolic_sar",
+      "donchian",
+      "keltner"
+    ]
+  },
+  "pattern_families_v2": {
+    "architecture": "unified_family_detector",
+    "entry_point": "unified_detector.py \u2192 detect_patterns_v2()",
+    "families": {
+      "horizontal": [
+        "double_top",
+        "double_bottom",
+        "triple_top",
+        "triple_bottom",
+        "range",
+        "rectangle"
+      ],
+      "converging": [
+        "symmetrical_triangle",
+        "ascending_triangle",
+        "descending_triangle",
+        "rising_wedge",
+        "falling_wedge"
+      ],
+      "parallel": [
+        "ascending_channel",
+        "descending_channel",
+        "horizontal_channel",
+        "bull_flag",
+        "bear_flag"
+      ],
+      "swing_composite": [
+        "head_shoulders",
+        "inverse_head_shoulders"
+      ]
+    },
+    "confidence_model": "dominance_based",
+    "max_confidence": 0.92,
+    "states": [
+      "CLEAR",
+      "WEAK",
+      "CONFLICTED",
+      "COMPRESSION",
+      "NONE"
+    ],
+    "regime_binding": true,
+    "trigger_engine": true,
+    "render_contract": true
+  }
+}

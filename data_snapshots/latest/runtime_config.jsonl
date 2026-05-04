@@ -1,0 +1,1 @@
+{"_id": {"$oid": "69ea50620bdfe8711686c7c6"}, "config_id": "main", "enabled": true, "mode": "AUTO", "status": "IDLE", "loop_interval_sec": 60, "symbols": ["BTCUSDT"], "last_run_at": 1776973795, "next_run_at": 1776973855, "last_error": null, "updated_at": 1776973795}

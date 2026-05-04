@@ -1,0 +1,14 @@
+{
+  "provider": "binance",
+  "baseUrl": "https://fapi.binance.com",
+  "endpoints": {
+    "funding": "/fapi/v1/fundingRate",
+    "oi": "/fapi/v1/openInterest",
+    "liquidations": "/fapi/v1/forceOrders"
+  },
+  "supportedPairs": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ]
+}

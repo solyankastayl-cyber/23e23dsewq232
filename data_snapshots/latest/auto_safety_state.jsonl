@@ -1,0 +1,1 @@
+{"_id": {"$oid": "69e9e0dadc347bcb19d4baf8"}, "state_id": "main", "trades_last_hour": 0, "concurrent_positions": 0, "capital_deployed_pct": 0.0, "daily_pnl_usd": 0.0, "consecutive_losses": 0, "last_block_reason": null, "updated_at": 1776935130761}

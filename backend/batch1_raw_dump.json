@@ -1,0 +1,1752 @@
+[
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 77703.53,
+    "entry_time": "2026-04-17 15:34:14.724000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5024
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:34:14.724000",
+        "resolved": true,
+        "exit_price": 78045.32,
+        "pnl": 0.004398641863503604,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:34:14.724000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 77703.53,
+    "entry_time": "2026-04-17 15:34:14.725000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:34:14.725000",
+        "resolved": true,
+        "exit_price": 78045.32,
+        "pnl": 0.004398641863503604,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:34:14.725000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 77703.53,
+    "entry_time": "2026-04-17 15:34:14.726000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:34:14.726000",
+        "resolved": true,
+        "exit_price": 78045.32,
+        "pnl": 0.004398641863503604,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:34:14.726000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 2445.65,
+    "entry_time": "2026-04-17 15:34:14.726000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.6805
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:34:14.726000",
+        "resolved": true,
+        "exit_price": 2455.17,
+        "pnl": 0.0038926256823339322,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:34:14.726000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 2445.65,
+    "entry_time": "2026-04-17 15:34:14.726000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:34:14.726000",
+        "resolved": true,
+        "exit_price": 2455.17,
+        "pnl": 0.0038926256823339322,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:34:14.726000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 2445.65,
+    "entry_time": "2026-04-17 15:34:14.727000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:34:14.727000",
+        "resolved": true,
+        "exit_price": 2455.17,
+        "pnl": 0.0038926256823339322,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:34:14.727000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:34:14.727000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:34:14.727000",
+        "resolved": true,
+        "exit_price": 90.29,
+        "pnl": 0.005344616412426277,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:34:14.727000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:34:14.727000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.6458
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:34:14.727000",
+        "resolved": true,
+        "exit_price": 90.29,
+        "pnl": 0.005344616412426277,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:34:14.727000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:34:14.728000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:34:14.728000",
+        "resolved": true,
+        "exit_price": 90.29,
+        "pnl": 0.005344616412426277,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:34:14.728000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 642.61,
+    "entry_time": "2026-04-17 15:34:14.728000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:34:14.728000",
+        "resolved": true,
+        "exit_price": 644.86,
+        "pnl": 0.00350134607304586,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:34:14.728000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 77703.53,
+    "entry_time": "2026-04-17 15:39:11.524000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:11.524000",
+        "resolved": true,
+        "exit_price": 78045.32,
+        "pnl": 0.004398641863503604,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:11.524000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 77703.53,
+    "entry_time": "2026-04-17 15:39:11.525000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:11.525000",
+        "resolved": true,
+        "exit_price": 78045.32,
+        "pnl": 0.004398641863503604,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:11.525000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 77703.53,
+    "entry_time": "2026-04-17 15:39:11.525000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:11.525000",
+        "resolved": true,
+        "exit_price": 78045.32,
+        "pnl": 0.004398641863503604,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:11.525000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 2445.65,
+    "entry_time": "2026-04-17 15:39:11.526000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:11.526000",
+        "resolved": true,
+        "exit_price": 2455.17,
+        "pnl": 0.0038926256823339322,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:11.526000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 2445.65,
+    "entry_time": "2026-04-17 15:39:11.526000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:11.526000",
+        "resolved": true,
+        "exit_price": 2455.17,
+        "pnl": 0.0038926256823339322,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:11.526000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 2445.65,
+    "entry_time": "2026-04-17 15:39:11.526000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:11.526000",
+        "resolved": true,
+        "exit_price": 2455.17,
+        "pnl": 0.0038926256823339322,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:11.526000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:39:11.527000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:11.527000",
+        "resolved": true,
+        "exit_price": 90.29,
+        "pnl": -0.005344616412426277,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:11.527000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:39:11.527000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.7482
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:11.527000",
+        "resolved": true,
+        "exit_price": 90.29,
+        "pnl": 0.005344616412426277,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:11.527000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:39:11.527000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:11.527000",
+        "resolved": true,
+        "exit_price": 90.29,
+        "pnl": 0.005344616412426277,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:11.527000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 642.61,
+    "entry_time": "2026-04-17 15:39:11.528000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:11.528000",
+        "resolved": true,
+        "exit_price": 644.86,
+        "pnl": -0.00350134607304586,
+        "resolve_at": "2026-04-17 16:39:12.703000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:11.528000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 77743.47,
+    "entry_time": "2026-04-17 15:39:21.612000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5158
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:21.612000",
+        "resolved": true,
+        "exit_price": 78101.53,
+        "pnl": 0.004605660128111051,
+        "resolve_at": "2026-04-17 16:44:12.803000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:21.612000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 77743.47,
+    "entry_time": "2026-04-17 15:39:21.613000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:21.613000",
+        "resolved": true,
+        "exit_price": 78101.53,
+        "pnl": 0.004605660128111051,
+        "resolve_at": "2026-04-17 16:44:12.803000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:21.613000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 77743.47,
+    "entry_time": "2026-04-17 15:39:21.614000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:21.614000",
+        "resolved": true,
+        "exit_price": 78101.53,
+        "pnl": 0.004605660128111051,
+        "resolve_at": "2026-04-17 16:44:12.803000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:21.614000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 2448.44,
+    "entry_time": "2026-04-17 15:39:21.614000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.7101
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:21.614000",
+        "resolved": true,
+        "exit_price": 2463.23,
+        "pnl": 0.006040580941334059,
+        "resolve_at": "2026-04-17 16:44:12.803000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:21.614000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 2448.44,
+    "entry_time": "2026-04-17 15:39:21.615000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:21.615000",
+        "resolved": true,
+        "exit_price": 2463.23,
+        "pnl": 0.006040580941334059,
+        "resolve_at": "2026-04-17 16:44:12.803000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:21.615000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 2448.44,
+    "entry_time": "2026-04-17 15:39:21.615000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:21.615000",
+        "resolved": true,
+        "exit_price": 2463.23,
+        "pnl": 0.006040580941334059,
+        "resolve_at": "2026-04-17 16:44:12.803000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:21.615000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 89.94,
+    "entry_time": "2026-04-17 15:39:21.615000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:21.615000",
+        "resolved": true,
+        "exit_price": 90.25,
+        "pnl": 0.0034467422726262207,
+        "resolve_at": "2026-04-17 16:44:12.803000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:21.615000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 89.94,
+    "entry_time": "2026-04-17 15:39:21.616000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.6834
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:21.616000",
+        "resolved": true,
+        "exit_price": 90.25,
+        "pnl": 0.0034467422726262207,
+        "resolve_at": "2026-04-17 16:44:12.803000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:21.616000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 89.94,
+    "entry_time": "2026-04-17 15:39:21.616000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:21.616000",
+        "resolved": true,
+        "exit_price": 90.25,
+        "pnl": 0.0034467422726262207,
+        "resolve_at": "2026-04-17 16:44:12.803000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:21.616000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 642.8,
+    "entry_time": "2026-04-17 15:39:21.616000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:39:21.616000",
+        "resolved": true,
+        "exit_price": 645.66,
+        "pnl": 0.0044492843808338735,
+        "resolve_at": "2026-04-17 16:44:12.803000"
+      }
+    ],
+    "created_at": "2026-04-17 15:39:21.616000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 77478.29,
+    "entry_time": "2026-04-17 15:44:15.598000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:44:15.598000",
+        "resolved": true,
+        "exit_price": 78101.53,
+        "pnl": -0.00804405982630754,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:44:15.598000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 77478.29,
+    "entry_time": "2026-04-17 15:44:15.599000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5097
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:44:15.599000",
+        "resolved": true,
+        "exit_price": 78101.53,
+        "pnl": 0.00804405982630754,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:44:15.599000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 77478.29,
+    "entry_time": "2026-04-17 15:44:15.600000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.6334
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:44:15.600000",
+        "resolved": true,
+        "exit_price": 78101.53,
+        "pnl": 0.00804405982630754,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:44:15.600000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 2437.35,
+    "entry_time": "2026-04-17 15:44:15.600000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:44:15.600000",
+        "resolved": true,
+        "exit_price": 2463.23,
+        "pnl": -0.01061808931831707,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:44:15.600000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 2437.35,
+    "entry_time": "2026-04-17 15:44:15.601000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.7099
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:44:15.601000",
+        "resolved": true,
+        "exit_price": 2463.23,
+        "pnl": 0.01061808931831707,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:44:15.601000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 2437.35,
+    "entry_time": "2026-04-17 15:44:15.601000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "aligned",
+      "score": 0.7531
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:44:15.601000",
+        "resolved": true,
+        "exit_price": 2463.23,
+        "pnl": 0.01061808931831707,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:44:15.601000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:44:15.602000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:44:15.602000",
+        "resolved": true,
+        "exit_price": 90.25,
+        "pnl": -0.004899231711390688,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:44:15.602000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:44:15.602000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:44:15.602000",
+        "resolved": true,
+        "exit_price": 90.25,
+        "pnl": 0.004899231711390688,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:44:15.602000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:44:15.602000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:44:15.602000",
+        "resolved": true,
+        "exit_price": 90.25,
+        "pnl": 0.004899231711390688,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:44:15.602000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 642.8,
+    "entry_time": "2026-04-17 15:44:15.603000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:44:15.603000",
+        "resolved": true,
+        "exit_price": 645.66,
+        "pnl": -0.0044492843808338735,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:44:15.603000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 77478.29,
+    "entry_time": "2026-04-17 15:49:11.718000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:49:11.718000",
+        "resolved": true,
+        "exit_price": 78101.53,
+        "pnl": -0.00804405982630754,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:49:11.718000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 77478.29,
+    "entry_time": "2026-04-17 15:49:11.719000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:49:11.719000",
+        "resolved": true,
+        "exit_price": 78101.53,
+        "pnl": -0.00804405982630754,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:49:11.719000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 77478.29,
+    "entry_time": "2026-04-17 15:49:11.719000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:49:11.719000",
+        "resolved": true,
+        "exit_price": 78101.53,
+        "pnl": -0.00804405982630754,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:49:11.719000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 2437.35,
+    "entry_time": "2026-04-17 15:49:11.719000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:49:11.719000",
+        "resolved": true,
+        "exit_price": 2463.23,
+        "pnl": -0.01061808931831707,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:49:11.719000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 2437.35,
+    "entry_time": "2026-04-17 15:49:11.719000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:49:11.719000",
+        "resolved": true,
+        "exit_price": 2463.23,
+        "pnl": -0.01061808931831707,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:49:11.719000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 2437.35,
+    "entry_time": "2026-04-17 15:49:11.720000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:49:11.720000",
+        "resolved": true,
+        "exit_price": 2463.23,
+        "pnl": -0.01061808931831707,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:49:11.720000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:49:11.720000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:49:11.720000",
+        "resolved": true,
+        "exit_price": 90.25,
+        "pnl": -0.004899231711390688,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:49:11.720000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:49:11.720000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:49:11.720000",
+        "resolved": true,
+        "exit_price": 90.25,
+        "pnl": -0.004899231711390688,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:49:11.720000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 89.81,
+    "entry_time": "2026-04-17 15:49:11.720000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:49:11.720000",
+        "resolved": true,
+        "exit_price": 90.25,
+        "pnl": -0.004899231711390688,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:49:11.720000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 642.8,
+    "entry_time": "2026-04-17 15:49:11.720000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:49:11.720000",
+        "resolved": true,
+        "exit_price": 645.66,
+        "pnl": 0.0044492843808338735,
+        "resolve_at": "2026-04-17 16:49:12.902000"
+      }
+    ],
+    "created_at": "2026-04-17 15:49:11.720000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 77672.24,
+    "entry_time": "2026-04-17 15:54:15.083000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:54:15.083000",
+        "resolved": true,
+        "exit_price": 77885.31,
+        "pnl": -0.00274319370730125,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:54:15.083000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 77672.24,
+    "entry_time": "2026-04-17 15:54:15.084000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:54:15.084000",
+        "resolved": true,
+        "exit_price": 77885.31,
+        "pnl": -0.00274319370730125,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:54:15.084000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 77672.24,
+    "entry_time": "2026-04-17 15:54:15.085000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:54:15.085000",
+        "resolved": true,
+        "exit_price": 77885.31,
+        "pnl": -0.00274319370730125,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:54:15.085000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 2440.89,
+    "entry_time": "2026-04-17 15:54:15.085000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:54:15.085000",
+        "resolved": true,
+        "exit_price": 2452.02,
+        "pnl": -0.004559812199648534,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:54:15.085000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 2440.89,
+    "entry_time": "2026-04-17 15:54:15.085000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:54:15.085000",
+        "resolved": true,
+        "exit_price": 2452.02,
+        "pnl": -0.004559812199648534,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:54:15.085000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 2440.89,
+    "entry_time": "2026-04-17 15:54:15.085000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:54:15.085000",
+        "resolved": true,
+        "exit_price": 2452.02,
+        "pnl": -0.004559812199648534,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:54:15.085000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 89.87,
+    "entry_time": "2026-04-17 15:54:15.085000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:54:15.085000",
+        "resolved": true,
+        "exit_price": 90.26,
+        "pnl": 0.004339601646823195,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:54:15.085000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 89.87,
+    "entry_time": "2026-04-17 15:54:15.086000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:54:15.086000",
+        "resolved": true,
+        "exit_price": 90.26,
+        "pnl": 0.004339601646823195,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:54:15.086000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 89.87,
+    "entry_time": "2026-04-17 15:54:15.086000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:54:15.086000",
+        "resolved": true,
+        "exit_price": 90.26,
+        "pnl": 0.004339601646823195,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:54:15.086000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 641.66,
+    "entry_time": "2026-04-17 15:54:15.086000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:54:15.086000",
+        "resolved": true,
+        "exit_price": 645.12,
+        "pnl": -0.0053922638157280125,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:54:15.086000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 77672.24,
+    "entry_time": "2026-04-17 15:59:11.915000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:59:11.915000",
+        "resolved": true,
+        "exit_price": 77885.31,
+        "pnl": 0.00274319370730125,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:59:11.915000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 77672.24,
+    "entry_time": "2026-04-17 15:59:11.916000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:59:11.916000",
+        "resolved": true,
+        "exit_price": 77885.31,
+        "pnl": 0.00274319370730125,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:59:11.916000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BTCUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 77672.24,
+    "entry_time": "2026-04-17 15:59:11.916000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:59:11.916000",
+        "resolved": true,
+        "exit_price": 77885.31,
+        "pnl": 0.00274319370730125,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:59:11.916000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 2440.89,
+    "entry_time": "2026-04-17 15:59:11.916000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:59:11.916000",
+        "resolved": true,
+        "exit_price": 2452.02,
+        "pnl": -0.004559812199648534,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:59:11.916000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 2440.89,
+    "entry_time": "2026-04-17 15:59:11.916000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:59:11.916000",
+        "resolved": true,
+        "exit_price": 2452.02,
+        "pnl": -0.004559812199648534,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:59:11.916000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "ETHUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 2440.89,
+    "entry_time": "2026-04-17 15:59:11.917000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:59:11.917000",
+        "resolved": true,
+        "exit_price": 2452.02,
+        "pnl": -0.004559812199648534,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:59:11.917000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 89.87,
+    "entry_time": "2026-04-17 15:59:11.917000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:59:11.917000",
+        "resolved": true,
+        "exit_price": 90.26,
+        "pnl": 0.004339601646823195,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:59:11.917000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 89.87,
+    "entry_time": "2026-04-17 15:59:11.918000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:59:11.918000",
+        "resolved": true,
+        "exit_price": 90.26,
+        "pnl": 0.004339601646823195,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:59:11.918000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 89.87,
+    "entry_time": "2026-04-17 15:59:11.918000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:59:11.918000",
+        "resolved": true,
+        "exit_price": 90.26,
+        "pnl": 0.004339601646823195,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:59:11.918000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "market_dynamic",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 641.66,
+    "entry_time": "2026-04-17 15:59:11.918000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "1h",
+        "target_exit_time": "2026-04-17 16:59:11.918000",
+        "resolved": true,
+        "exit_price": 645.12,
+        "pnl": -0.0053922638157280125,
+        "resolve_at": "2026-04-17 16:59:13.096000"
+      }
+    ],
+    "created_at": "2026-04-17 15:59:11.918000",
+    "source": "shadow_collection_loop"
+  }
+]

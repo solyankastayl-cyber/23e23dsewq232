@@ -1,0 +1,2227 @@
+[
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ETHUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 2355.2,
+    "entry_time": "2026-04-18 12:35:50.553000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:35:50.553000",
+        "resolved": true,
+        "exit_price": 2347.71,
+        "pnl": 0.003180197010869473,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:35:50.553000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 86.82,
+    "entry_time": "2026-04-18 12:35:50.554000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:35:50.554000",
+        "resolved": true,
+        "exit_price": 85.99,
+        "pnl": -0.009560009214466694,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:35:50.554000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 0.09625,
+    "entry_time": "2026-04-18 12:35:50.554000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:35:50.554000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": 0.01932467532467533,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:35:50.554000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 633.52,
+    "entry_time": "2026-04-18 12:35:50.555000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:35:50.555000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": -0.0067874731658036916,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:35:50.555000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 9.4,
+    "entry_time": "2026-04-18 12:35:50.555000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.7589
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:35:50.555000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": 0.014893617021276655,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:35:50.555000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "XRPUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 1.4321,
+    "entry_time": "2026-04-18 12:36:27.005000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:36:27.005000",
+        "resolved": true,
+        "exit_price": 1.4263,
+        "pnl": 0.004049996508623719,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:36:27.005000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 76129.9,
+    "entry_time": "2026-04-18 12:36:27.006000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:36:27.006000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": 0.006307508613566914,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:36:27.006000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 86.82,
+    "entry_time": "2026-04-18 12:36:27.006000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:36:27.006000",
+        "resolved": true,
+        "exit_price": 85.99,
+        "pnl": -0.009560009214466694,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:36:27.006000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 9.4,
+    "entry_time": "2026-04-18 12:36:27.006000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.7589
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:36:27.006000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": 0.014893617021276655,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:36:27.006000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "AVAXUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 9.39,
+    "entry_time": "2026-04-18 12:36:27.007000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:36:27.007000",
+        "resolved": true,
+        "exit_price": 9.33,
+        "pnl": 0.006389776357827529,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:36:27.007000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 633.52,
+    "entry_time": "2026-04-18 12:41:33.297000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:41:33.297000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": 0.0067874731658036916,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:41:33.297000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "XRPUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 1.433,
+    "entry_time": "2026-04-18 12:41:33.298000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:41:33.298000",
+        "resolved": true,
+        "exit_price": 1.4263,
+        "pnl": 0.004675505931612108,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:41:33.298000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 76077.14,
+    "entry_time": "2026-04-18 12:41:33.298000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:41:33.298000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": 0.0056183762954284695,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:41:33.298000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 0.09569,
+    "entry_time": "2026-04-18 12:41:33.299000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:41:33.299000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": 0.013585536628696788,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:41:33.299000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "AVAXUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 9.39,
+    "entry_time": "2026-04-18 12:46:41.850000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:46:41.850000",
+        "resolved": true,
+        "exit_price": 9.33,
+        "pnl": 0.006389776357827529,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:46:41.850000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 9.4,
+    "entry_time": "2026-04-18 12:46:41.851000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.7589
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:46:41.851000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": 0.014893617021276655,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:46:41.851000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "SOLUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 86.75,
+    "entry_time": "2026-04-18 12:46:41.851000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.7808
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:46:41.851000",
+        "resolved": true,
+        "exit_price": 85.99,
+        "pnl": 0.008760806916426571,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:46:41.851000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 76169.99,
+    "entry_time": "2026-04-18 12:46:41.851000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:46:41.851000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": 0.006830511596496189,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:46:41.851000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 0.09569,
+    "entry_time": "2026-04-18 12:46:41.851000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:46:41.851000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": 0.013585536628696788,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:46:41.851000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "XRPUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 1.4346,
+    "entry_time": "2026-04-18 12:46:41.852000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:46:41.852000",
+        "resolved": true,
+        "exit_price": 1.4263,
+        "pnl": 0.005785584832009059,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:46:41.852000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 76207.96,
+    "entry_time": "2026-04-18 12:51:27.620000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:51:27.620000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": -0.007325350265247881,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:51:27.620000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 0.09569,
+    "entry_time": "2026-04-18 12:51:27.620000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:51:27.620000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": 0.013585536628696788,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:51:27.620000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ETHUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 2358.56,
+    "entry_time": "2026-04-18 12:51:27.621000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:51:27.621000",
+        "resolved": true,
+        "exit_price": 2347.71,
+        "pnl": 0.004600264568211073,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:51:27.621000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 86.75,
+    "entry_time": "2026-04-18 12:51:27.621000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:51:27.621000",
+        "resolved": true,
+        "exit_price": 85.99,
+        "pnl": -0.008760806916426571,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:51:27.621000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 632.12,
+    "entry_time": "2026-04-18 12:51:27.621000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:51:27.621000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": -0.004587736505726725,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:51:27.621000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 0.09613,
+    "entry_time": "2026-04-18 12:56:33.723000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:56:33.723000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": 0.018100488921252385,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:56:33.723000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ADAUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 0.2511,
+    "entry_time": "2026-04-18 12:56:33.723000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5416
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:56:33.723000",
+        "resolved": true,
+        "exit_price": 0.2501,
+        "pnl": 0.003982477100756675,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:56:33.723000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ETHUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 2357.25,
+    "entry_time": "2026-04-18 12:56:33.724000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:56:33.724000",
+        "resolved": true,
+        "exit_price": 2347.71,
+        "pnl": 0.004047088768692317,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:56:33.724000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 9.4,
+    "entry_time": "2026-04-18 12:56:33.724000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:56:33.724000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": 0.014893617021276655,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:56:33.724000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "AVAXUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 9.39,
+    "entry_time": "2026-04-18 12:56:33.724000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.6603
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:56:33.724000",
+        "resolved": true,
+        "exit_price": 9.33,
+        "pnl": 0.006389776357827529,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:56:33.724000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 76235.83,
+    "entry_time": "2026-04-18 12:56:33.724000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 16:56:33.724000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": 0.007688248425969722,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 12:56:33.724000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 633.88,
+    "entry_time": "2026-04-18 13:01:42.137000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:01:42.137000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": 0.007351549189120919,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:01:42.137000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ADAUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 0.2511,
+    "entry_time": "2026-04-18 13:01:42.138000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5416
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:01:42.138000",
+        "resolved": true,
+        "exit_price": 0.2501,
+        "pnl": 0.003982477100756675,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:01:42.138000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 9.36,
+    "entry_time": "2026-04-18 13:01:42.138000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:01:42.138000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": -0.010683760683760646,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:01:42.138000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 86.9,
+    "entry_time": "2026-04-18 13:01:42.138000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:01:42.138000",
+        "resolved": true,
+        "exit_price": 85.99,
+        "pnl": -0.010471806674338443,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:01:42.138000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 0.09613,
+    "entry_time": "2026-04-18 13:01:42.138000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:01:42.138000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": 0.018100488921252385,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:01:42.138000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "AVAXUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 9.39,
+    "entry_time": "2026-04-18 13:01:42.138000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.95
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:01:42.138000",
+        "resolved": true,
+        "exit_price": 9.33,
+        "pnl": 0.006389776357827529,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:01:42.138000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 76182.14,
+    "entry_time": "2026-04-18 13:01:42.139000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:01:42.139000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": 0.006988908423942843,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:01:42.139000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "XRPUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 1.4358,
+    "entry_time": "2026-04-18 13:06:27.173000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5567
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:06:27.173000",
+        "resolved": true,
+        "exit_price": 1.4263,
+        "pnl": 0.006616520406741931,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:06:27.173000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "SOLUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 86.91,
+    "entry_time": "2026-04-18 13:06:27.173000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:06:27.173000",
+        "resolved": true,
+        "exit_price": 85.99,
+        "pnl": -0.010585663329881506,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:06:27.173000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 9.36,
+    "entry_time": "2026-04-18 13:06:27.174000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:06:27.174000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": -0.010683760683760646,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:06:27.174000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 0.09613,
+    "entry_time": "2026-04-18 13:06:27.174000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:06:27.174000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": -0.018100488921252385,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:06:27.174000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 633.88,
+    "entry_time": "2026-04-18 13:06:27.174000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:06:27.174000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": 0.007351549189120919,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:06:27.174000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ADAUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 0.2511,
+    "entry_time": "2026-04-18 13:06:27.174000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:06:27.174000",
+        "resolved": true,
+        "exit_price": 0.2501,
+        "pnl": -0.003982477100756675,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:06:27.174000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 76210.91,
+    "entry_time": "2026-04-18 13:06:27.175000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:06:27.175000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": 0.007363775081546685,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:06:27.175000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 0.09613,
+    "entry_time": "2026-04-18 13:11:32.793000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.6748
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:11:32.793000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": 0.018100488921252385,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:11:32.793000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 633.88,
+    "entry_time": "2026-04-18 13:11:32.793000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:11:32.793000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": -0.007351549189120919,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:11:32.793000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ETHUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 2356.14,
+    "entry_time": "2026-04-18 13:11:32.794000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5279
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:11:32.794000",
+        "resolved": true,
+        "exit_price": 2347.71,
+        "pnl": 0.003577885864167595,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:11:32.794000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "AVAXUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 9.39,
+    "entry_time": "2026-04-18 13:11:32.794000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "aligned",
+      "score": 0.7242
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:11:32.794000",
+        "resolved": true,
+        "exit_price": 9.33,
+        "pnl": 0.006389776357827529,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:11:32.794000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 76149.98,
+    "entry_time": "2026-04-18 13:16:42.646000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:16:42.646000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": -0.006569535540258705,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:16:42.646000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 9.36,
+    "entry_time": "2026-04-18 13:16:42.647000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:16:42.647000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": -0.010683760683760646,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:16:42.647000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 86.89,
+    "entry_time": "2026-04-18 13:16:42.647000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:16:42.647000",
+        "resolved": true,
+        "exit_price": 85.99,
+        "pnl": 0.010357923811716028,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:16:42.647000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "AVAXUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 9.39,
+    "entry_time": "2026-04-18 13:16:42.648000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:16:42.648000",
+        "resolved": true,
+        "exit_price": 9.33,
+        "pnl": 0.006389776357827529,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:16:42.648000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 0.09613,
+    "entry_time": "2026-04-18 13:16:42.648000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:16:42.648000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": -0.018100488921252385,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:16:42.648000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 633.88,
+    "entry_time": "2026-04-18 13:16:42.648000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:16:42.648000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": -0.007351549189120919,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:16:42.648000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "XRPUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 1.4366,
+    "entry_time": "2026-04-18 13:21:27.226000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:21:27.226000",
+        "resolved": true,
+        "exit_price": 1.4263,
+        "pnl": -0.007169706250870247,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:21:27.226000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 76115.98,
+    "entry_time": "2026-04-18 13:21:27.227000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:21:27.227000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": -0.0061257833112046845,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:21:27.227000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "AVAXUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 9.39,
+    "entry_time": "2026-04-18 13:21:27.227000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:21:27.227000",
+        "resolved": true,
+        "exit_price": 9.33,
+        "pnl": 0.006389776357827529,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:21:27.227000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 9.32,
+    "entry_time": "2026-04-18 13:21:27.228000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:21:27.228000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": 0.0064377682403434005,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:21:27.228000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ADAUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 0.2511,
+    "entry_time": "2026-04-18 13:21:27.228000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:21:27.228000",
+        "resolved": true,
+        "exit_price": 0.2501,
+        "pnl": 0.003982477100756675,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:21:27.228000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 0.09603,
+    "entry_time": "2026-04-18 13:26:33.623000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:26:33.623000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": -0.017077996459439783,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:26:33.623000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 76158.21,
+    "entry_time": "2026-04-18 13:26:33.624000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:26:33.624000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": -0.00667689012123578,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:26:33.624000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 9.32,
+    "entry_time": "2026-04-18 13:26:33.624000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:26:33.624000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": 0.0064377682403434005,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:26:33.624000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 633.88,
+    "entry_time": "2026-04-18 13:26:33.625000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:26:33.625000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": -0.007351549189120919,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:26:33.625000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "XRPUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 1.436,
+    "entry_time": "2026-04-18 13:26:33.625000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:26:33.625000",
+        "resolved": true,
+        "exit_price": 1.4263,
+        "pnl": -0.006754874651810614,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:26:33.625000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 86.67,
+    "entry_time": "2026-04-18 13:31:42.275000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:31:42.275000",
+        "resolved": true,
+        "exit_price": 85.99,
+        "pnl": -0.007845852082612285,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:31:42.275000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1H",
+    "side": "BUY",
+    "entry_price": 633.88,
+    "entry_time": "2026-04-18 13:31:42.276000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:31:42.276000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": -0.007351549189120919,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:31:42.276000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 76023.06,
+    "entry_time": "2026-04-18 13:31:42.276000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:31:42.276000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": 0.004911009896207694,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:31:42.276000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 9.36,
+    "entry_time": "2026-04-18 13:31:42.276000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:31:42.276000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": 0.010683760683760646,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:31:42.276000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "XRPUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 1.436,
+    "entry_time": "2026-04-18 13:31:42.277000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:31:42.277000",
+        "resolved": true,
+        "exit_price": 1.4263,
+        "pnl": -0.006754874651810614,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:31:42.277000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "XRPUSDT",
+    "timeframe": "4H",
+    "side": "BUY",
+    "entry_price": 1.4356,
+    "entry_time": "2026-04-18 13:36:27.133000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:36:27.133000",
+        "resolved": true,
+        "exit_price": 1.4263,
+        "pnl": -0.006478127612148291,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:36:27.133000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 633.88,
+    "entry_time": "2026-04-18 13:36:27.134000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:36:27.134000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": -0.007351549189120919,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:36:27.134000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ETHUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 2350.0,
+    "entry_time": "2026-04-18 13:36:27.134000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:36:27.134000",
+        "resolved": true,
+        "exit_price": 2347.71,
+        "pnl": 0.0009744680851063675,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:36:27.134000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "AVAXUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 9.39,
+    "entry_time": "2026-04-18 13:36:27.134000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:36:27.134000",
+        "resolved": true,
+        "exit_price": 9.33,
+        "pnl": 0.006389776357827529,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:36:27.134000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ADAUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 0.2511,
+    "entry_time": "2026-04-18 13:36:27.135000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:36:27.135000",
+        "resolved": true,
+        "exit_price": 0.2501,
+        "pnl": 0.003982477100756675,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:36:27.135000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "XRPUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 1.4311,
+    "entry_time": "2026-04-18 13:41:33.083000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:41:33.083000",
+        "resolved": true,
+        "exit_price": 1.4263,
+        "pnl": 0.0033540633079450336,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:41:33.083000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ETHUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 2346.95,
+    "entry_time": "2026-04-18 13:41:33.084000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:41:33.084000",
+        "resolved": true,
+        "exit_price": 2347.71,
+        "pnl": -0.00032382453823056234,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:41:33.084000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BTCUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 75894.52,
+    "entry_time": "2026-04-18 13:41:33.084000",
+    "features": {
+      "cluster": "majors",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:41:33.084000",
+        "resolved": true,
+        "exit_price": 75649.71,
+        "pnl": 0.003225661088573953,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:41:33.084000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "SOLUSDT",
+    "timeframe": "1D",
+    "side": "BUY",
+    "entry_price": 86.53,
+    "entry_time": "2026-04-18 13:41:33.085000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:41:33.085000",
+        "resolved": true,
+        "exit_price": 85.99,
+        "pnl": -0.006240610192996721,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:41:33.085000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 9.37,
+    "entry_time": "2026-04-18 13:41:33.085000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:41:33.085000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": 0.011739594450373474,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:41:33.085000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 0.09555,
+    "entry_time": "2026-04-18 13:46:42.276000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:46:42.276000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": 0.012140240711669225,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:46:42.276000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "BNBUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 632.05,
+    "entry_time": "2026-04-18 13:46:42.277000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:46:42.277000",
+        "resolved": true,
+        "exit_price": 629.22,
+        "pnl": 0.004477493869155806,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:46:42.277000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 9.37,
+    "entry_time": "2026-04-18 13:46:42.277000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:46:42.277000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": 0.011739594450373474,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:46:42.277000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "AVAXUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 9.35,
+    "entry_time": "2026-04-18 13:46:42.277000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:46:42.277000",
+        "resolved": true,
+        "exit_price": 9.33,
+        "pnl": 0.0021390374331550347,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:46:42.277000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "DOGEUSDT",
+    "timeframe": "1D",
+    "side": "SELL",
+    "entry_price": 0.09555,
+    "entry_time": "2026-04-18 13:51:32.315000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:51:32.315000",
+        "resolved": true,
+        "exit_price": 0.09439,
+        "pnl": 0.012140240711669225,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:51:32.315000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "ADAUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 0.2511,
+    "entry_time": "2026-04-18 13:51:32.316000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:51:32.316000",
+        "resolved": true,
+        "exit_price": 0.2501,
+        "pnl": 0.003982477100756675,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:51:32.316000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "LINKUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 9.37,
+    "entry_time": "2026-04-18 13:51:32.317000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:51:32.317000",
+        "resolved": true,
+        "exit_price": 9.26,
+        "pnl": 0.011739594450373474,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:51:32.317000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "AVAXUSDT",
+    "timeframe": "4H",
+    "side": "SELL",
+    "entry_price": 9.35,
+    "entry_time": "2026-04-18 13:51:32.317000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:51:32.317000",
+        "resolved": true,
+        "exit_price": 9.33,
+        "pnl": 0.0021390374331550347,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:51:32.317000",
+    "source": "shadow_collection_loop"
+  },
+  {
+    "experiment_id": "batch2_4h",
+    "symbol": "SOLUSDT",
+    "timeframe": "1H",
+    "side": "SELL",
+    "entry_price": 86.83,
+    "entry_time": "2026-04-18 13:51:32.318000",
+    "features": {
+      "cluster": "alts",
+      "alignment": "divergent",
+      "score": 0.5
+    },
+    "horizons": [
+      {
+        "name": "4h",
+        "target_exit_time": "2026-04-18 17:51:32.318000",
+        "resolved": true,
+        "exit_price": 85.99,
+        "pnl": 0.009674075780260319,
+        "resolve_at": "2026-04-18 19:00:37.167000"
+      }
+    ],
+    "created_at": "2026-04-18 13:51:32.318000",
+    "source": "shadow_collection_loop"
+  }
+]

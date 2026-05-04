@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"group_by":{"$numberInt":"1"},"bucket_key":{"$numberInt":"1"}},"name":"uniq_bucket","unique":true}],"uuid":"a7a03319157049c3ab3bcc105368d7d1","collectionName":"ta_prediction_calibration_stats","type":"collection"}

@@ -1,0 +1,11 @@
+# /app/backend/.env (secrets masked)
+MONGO_URL="mongodb://localhost:27017"
+DB_NAME="trading_os"
+CORS_ORIGINS="*"
+JWT_SECRET=<redacted>
+EXCHANGE_MODE="PAPER"
+
+# /app/frontend/.env (URL only — no secrets)
+REACT_APP_BACKEND_URL=https://trading-logic-suite.preview.emergentagent.com
+WDS_SOCKET_PORT=443
+ENABLE_HEALTH_CHECK=false

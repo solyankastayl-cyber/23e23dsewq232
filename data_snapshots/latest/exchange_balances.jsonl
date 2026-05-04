@@ -1,0 +1,1 @@
+{"_id": {"$oid": "69f7b531b02c8e7510986db2"}, "asset": "USDT", "free": 10000.0, "locked": 0.0, "total": 10000.0, "updated_at": {"$date": "2026-05-03T20:50:57.564Z"}}

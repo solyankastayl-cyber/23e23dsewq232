@@ -1,0 +1,358 @@
+/* Existing styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Global typography ───────────────────────────────────────────────
+   Gilroy is shipped from /public/fonts/gilroy.css (11 weights). We
+   pin it as the application-wide default so individual components
+   don't need to repeat `style={{ fontFamily: 'Gilroy, sans-serif' }}`.
+   System fall-back kicks in only if the woff fails to load.       */
+html,
+body,
+#root {
+  font-family: 'Gilroy', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse animation for live indicators */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 300ms ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(31, 41, 55, 0.3);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(75, 85, 99, 0.5);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.7);
+}
+
+
+/* ──────────────────────────────────────────────────────────────────
+   TRADING TERMINAL — scoped flat polish
+   --------------------------------------------------------------------
+   Applies ONLY inside .terminal-scope (root wrapper of /terminal page).
+   Cannot bleed into Fractal / Exchange / On-chain / Twitter / Telegram
+   / Sentiment / any other module. Verified by class scope.
+   ARCHITECT: roll back by deleting this whole block.
+   ──────────────────────────────────────────────────────────────── */
+
+/* 1) Kill shadows / gradients / blur ONLY within Trading Terminal */
+.terminal-scope,
+.terminal-scope *,
+.terminal-scope *::before,
+.terminal-scope *::after {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.terminal-scope *:not(img):not(svg):not(canvas):not(video):not(picture) {
+  background-image: none !important;
+}
+
+.terminal-scope,
+.terminal-scope *,
+.terminal-scope *::before,
+.terminal-scope *::after {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* 2) Kill ring halo within scope */
+.terminal-scope *,
+.terminal-scope *:focus,
+.terminal-scope *:focus-visible {
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-ring-offset-shadow: 0 0 #0000 !important;
+}
+
+/* 3) Soften residual divider lines within scope */
+.terminal-scope hr,
+.terminal-scope .divider {
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+/* 4) Neutralise common coloured-pill backgrounds within scope.
+   Tailwind utility classes like bg-green-100, bg-red-100, bg-amber-100
+   etc. produce the soft "coloured chips" the architect wants gone.
+   We override their background while leaving the foreground colour
+   (text) intact so semantic meaning is preserved via the text colour
+   alone, not via a coloured wash.
+   EXCEPTION: form controls (input/textarea/select), <pre>, <code> and
+   readonly summary blocks need a subtle wash to remain readable.
+   Same for elements explicitly tagged data-keep-bg. */
+.terminal-scope [class*="bg-green-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-green-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-emerald-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-emerald-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-red-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-red-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-rose-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-rose-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-amber-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-amber-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-yellow-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-yellow-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-orange-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-orange-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-blue-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-blue-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-indigo-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-indigo-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-violet-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-violet-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-purple-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-purple-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-pink-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-pink-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-fuchsia-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-fuchsia-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-cyan-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-cyan-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-teal-50"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]),
+.terminal-scope [class*="bg-teal-100"]:not(input):not(textarea):not(select):not(pre):not(code):not([data-keep-bg]) {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.10) !important;
+}
+
+/* 4b) Form controls, code blocks, readonly summaries — keep a quiet
+   neutral wash so text doesn't sit on raw white (esp. multi-line). */
+.terminal-scope textarea,
+.terminal-scope input[type="text"],
+.terminal-scope input[type="search"],
+.terminal-scope input[type="number"],
+.terminal-scope input:not([type]),
+.terminal-scope select,
+.terminal-scope pre,
+.terminal-scope code,
+.terminal-scope [data-keep-bg] {
+  background-color: #f8fafc !important;
+  border: 1px solid rgba(15, 23, 42, 0.10) !important;
+  color: #0f172a !important;
+}
+
+/* 5) Same neutralisation for Tailwind alpha-bg patterns (bg-*/10, /20). */
+.terminal-scope [class*="bg-green-500/"],
+.terminal-scope [class*="bg-emerald-500/"],
+.terminal-scope [class*="bg-red-500/"],
+.terminal-scope [class*="bg-rose-500/"],
+.terminal-scope [class*="bg-amber-500/"],
+.terminal-scope [class*="bg-yellow-500/"],
+.terminal-scope [class*="bg-orange-500/"],
+.terminal-scope [class*="bg-blue-500/"],
+.terminal-scope [class*="bg-indigo-500/"],
+.terminal-scope [class*="bg-violet-500/"],
+.terminal-scope [class*="bg-purple-500/"],
+.terminal-scope [class*="bg-pink-500/"],
+.terminal-scope [class*="bg-fuchsia-500/"],
+.terminal-scope [class*="bg-cyan-500/"],
+.terminal-scope [class*="bg-teal-500/"] {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.10) !important;
+}
+
+/* 6) Replace coloured borders with neutral within scope */
+.terminal-scope [class*="border-green-"],
+.terminal-scope [class*="border-emerald-"],
+.terminal-scope [class*="border-red-"],
+.terminal-scope [class*="border-rose-"],
+.terminal-scope [class*="border-amber-"],
+.terminal-scope [class*="border-yellow-"],
+.terminal-scope [class*="border-orange-"],
+.terminal-scope [class*="border-blue-"],
+.terminal-scope [class*="border-indigo-"],
+.terminal-scope [class*="border-violet-"],
+.terminal-scope [class*="border-purple-"],
+.terminal-scope [class*="border-pink-"],
+.terminal-scope [class*="border-fuchsia-"],
+.terminal-scope [class*="border-cyan-"],
+.terminal-scope [class*="border-teal-"] {
+  border-color: rgba(15, 23, 42, 0.10) !important;
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   END TRADING TERMINAL — scoped flat polish
+   ──────────────────────────────────────────────────────────────── */
+
+
+/* ──────────────────────────────────────────────────────────────────
+   TRADING TERMINAL — pass 3: attention hierarchy (scoped)
+   --------------------------------------------------------------------
+   Final 10% — typography hierarchy, density, numeric alignment.
+   All rules remain scoped to .terminal-scope. Independent of pass 1/2.
+   ARCHITECT: roll back by deleting this whole block.
+   ──────────────────────────────────────────────────────────────── */
+
+/* 1) BASE DENSITY — terminal-grade type size and rhythm.
+   Compact enough to feel like Bloomberg/TradingView, not a SaaS site. */
+.terminal-scope {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* 2) PRIMARY HEADINGS — section titles, panel headers.
+   Slightly heavier so they "hold" the eye before numbers do. */
+.terminal-scope h1,
+.terminal-scope h2,
+.terminal-scope h3,
+.terminal-scope .section-title,
+.terminal-scope [data-section-title] {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #0f172a;
+}
+
+/* 3) SECONDARY LABELS — field captions, meta, axis legends.
+   Damped but still readable. */
+.terminal-scope label,
+.terminal-scope .label,
+.terminal-scope .meta,
+.terminal-scope [data-meta] {
+  font-size: 12px;
+  opacity: 0.68;
+}
+
+/* 4) TERTIARY / NOISE — hints, small print, helper text. */
+.terminal-scope .small,
+.terminal-scope .hint,
+.terminal-scope .subtle,
+.terminal-scope .muted,
+.terminal-scope [data-hint] {
+  opacity: 0.55;
+}
+
+/* 5) NUMBERS — where attention must land.
+   Slightly heavier, tabular, right-aligned (only where explicitly
+   marked as numeric — .num / [data-num] / font-mono), to avoid
+   breaking generic text tables. */
+.terminal-scope .num,
+.terminal-scope [data-num],
+.terminal-scope .price,
+.terminal-scope [class*="font-mono"],
+.terminal-scope [class*="tabular"] {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* 6) RIGHT-ALIGN numeric cells only when explicitly marked.
+   Keeping this opt-in prevents broken-looking plain text in regular
+   <td>'s that happen to hold strings. */
+.terminal-scope td.num,
+.terminal-scope td[data-num],
+.terminal-scope .num-cell,
+.terminal-scope [data-num-cell] {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* 7) VERTICAL RHYTHM — stable 8px baseline between siblings inside
+   .card / .panel / [data-panel]. Keeps the grid feeling intact even
+   without shadows/dividers. Opt-in via class to avoid breaking
+   tightly-packed custom layouts. */
+.terminal-scope .card > * + *,
+.terminal-scope .panel > * + *,
+.terminal-scope [data-panel] > * + *,
+.terminal-scope [data-rhythm] > * + * {
+  margin-top: 8px;
+}
+
+/* 8) STRONG VALUES — bright up/down colours read better when we
+   removed soft badges. Keep colour meaning on the NUMBER only. */
+.terminal-scope [data-direction="up"],
+.terminal-scope [data-sign="positive"] {
+  color: #16a34a;
+}
+.terminal-scope [data-direction="down"],
+.terminal-scope [data-sign="negative"] {
+  color: #dc2626;
+}
+
+/* 9) CODE / PRE — monospaced with a gentle wash. Overrides the
+   pass-1 "kill shadows" so code still has stable contrast. */
+.terminal-scope pre,
+.terminal-scope code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   END TRADING TERMINAL — pass 3
+   ──────────────────────────────────────────────────────────────── */
+
+
+/* ──────────────────────────────────────────────────────────────────
+   TRADING TERMINAL — pass 4: focus zones (text hierarchy)
+   Scoped strictly to .terminal-scope. No layout / logic changes.
+   primary   → key data (prices, decisions, headers)
+   secondary → supporting context (labels, descriptions)
+   tertiary  → ambient meta (timestamps, footnotes)
+   ──────────────────────────────────────────────────────────────── */
+.terminal-scope .primary {
+  font-weight: 600;
+}
+.terminal-scope .secondary {
+  opacity: 0.75;
+}
+.terminal-scope .tertiary {
+  opacity: 0.5;
+}
+/* ──────────────────────────────────────────────────────────────────
+   END TRADING TERMINAL — pass 4
+   ──────────────────────────────────────────────────────────────── */

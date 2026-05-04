@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"ffbf03a205f84f8bb5fe178c73e902d1","collectionName":"regime_guard_events","type":"collection"}

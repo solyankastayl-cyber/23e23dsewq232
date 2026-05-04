@@ -1,0 +1,40 @@
+{
+  "version": "15.7.0",
+  "phase": "Native Binding",
+  "engines": {
+    "funding_oi": {
+      "enabled": true,
+      "confidence_native": 0.8
+    },
+    "derivatives_pressure": {
+      "enabled": true,
+      "confidence_native": 0.8
+    },
+    "exchange_liquidation": {
+      "enabled": true,
+      "confidence_native": 0.8
+    },
+    "exchange_flow": {
+      "enabled": true,
+      "confidence_native": 0.8
+    },
+    "exchange_volume": {
+      "enabled": true,
+      "confidence_native": 0.85
+    }
+  },
+  "aggregator_weights": {
+    "funding": 0.2,
+    "derivatives": 0.2,
+    "liquidation": 0.15,
+    "flow": 0.3,
+    "volume": 0.15
+  },
+  "thresholds": {
+    "funding_extreme": 0.05,
+    "funding_crowded": 0.02,
+    "oi_expand": 0.05,
+    "cascade_high": 0.6,
+    "squeeze_high": 0.6
+  }
+}

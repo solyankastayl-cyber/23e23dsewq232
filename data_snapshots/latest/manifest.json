@@ -1,0 +1,42 @@
+{
+  "collections": {
+    "auto_runner_audit": 479,
+    "auto_safety_config": 1,
+    "auto_safety_state": 1,
+    "candles": 4438,
+    "conf_gate_events": 20,
+    "exchange_balances": 1,
+    "execution_events": 560,
+    "execution_jobs": 70,
+    "execution_queue_audit": 221,
+    "execution_readiness_decisions": 511,
+    "experiments": 4,
+    "generator_state": 188,
+    "ideas": 6,
+    "pattern_history": 8,
+    "pattern_outcomes": 69,
+    "pending_decisions": 143,
+    "position_exit_events": 124,
+    "regime_alerts": 84,
+    "regime_controls": 6,
+    "regime_decisions": 114,
+    "regime_guard_events": 8,
+    "regime_model_metrics": 114,
+    "research_states": 114,
+    "runtime_config": 1,
+    "shadow_trades": 496,
+    "ta_prediction_history": 43,
+    "ta_prediction_temporal_buffer": 18,
+    "trading_cases": 350,
+    "vol_gate_events": 17
+  },
+  "db_name": "trading_os",
+  "host": "mongodb://localhost:27017",
+  "missing": [],
+  "skipped_runtime": [
+    "exchange_sync_logs",
+    "worker_heartbeats"
+  ],
+  "snapshot_taken_at": "2026-05-03T20:51:18.656226+00:00",
+  "total_docs": 8209
+}

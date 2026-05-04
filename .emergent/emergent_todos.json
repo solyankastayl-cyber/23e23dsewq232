@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Аудит-0: Собрать существующие аудит-доки и получить контекст",
+    "status": "completed"
+  },
+  {
+    "content": "Аудит-1: TA Core — карта всех модулей анализа рынка",
+    "status": "completed"
+  },
+  {
+    "content": "Аудит-1: TA Core — найти точки входа каждой ветки",
+    "status": "completed"
+  },
+  {
+    "content": "Аудит-1: TA Core — определить dead/orphaned модули",
+    "status": "completed"
+  },
+  {
+    "content": "Аудит-2: Predictions — трассировка Step 6→7→8→9→10→11→12 и выявление обрывов",
+    "status": "completed"
+  },
+  {
+    "content": "Аудит-2: Predictions — где теряются сигналы от TA Core",
+    "status": "completed"
+  },
+  {
+    "content": "Аудит-3: Trading — как Predictions попадают в execution",
+    "status": "completed"
+  },
+  {
+    "content": "Аудит-3: Trading — найти гейты, пауз-флаги, заблокированные ветки",
+    "status": "completed"
+  },
+  {
+    "content": "Финал: Собрать DEEP_AUDIT_REPORT.md",
+    "status": "completed"
+  }
+]

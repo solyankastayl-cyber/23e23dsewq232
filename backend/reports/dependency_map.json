@@ -1,0 +1,2535 @@
+{
+  "core_modules": [
+    "meta_alpha_portfolio",
+    "capital_flow",
+    "fractal_similarity",
+    "alpha_decay",
+    "portfolio_manager",
+    "system_validation",
+    "regime_memory",
+    "system_control",
+    "execution_brain",
+    "meta_alpha",
+    "simulation_engine",
+    "regime_graph",
+    "fractal_market_intelligence",
+    "hypothesis_engine",
+    "risk_budget",
+    "reflexivity_engine"
+  ],
+  "provider_modules": [
+    "data",
+    "market_data",
+    "exchange_intelligence",
+    "broker_adapters",
+    "exchange_sync",
+    "exchanges"
+  ],
+  "legacy_modules": [
+    "walk_forward",
+    "validation"
+  ],
+  "circular_imports": [
+    [
+      "macro_context",
+      "macro_context"
+    ],
+    [
+      "alpha_factory",
+      "alpha_factory"
+    ],
+    [
+      "portfolio_manager",
+      "portfolio_manager"
+    ],
+    [
+      "fractal_intelligence",
+      "fractal_intelligence"
+    ],
+    [
+      "event_bus",
+      "infrastructure",
+      "event_bus"
+    ],
+    [
+      "macro_context"
+    ],
+    [
+      "event_bus"
+    ],
+    [
+      "portfolio_manager"
+    ],
+    [
+      "system_validation",
+      "system_validation"
+    ],
+    [
+      "research_loop",
+      "research_loop"
+    ],
+    [
+      "regime_memory",
+      "regime_memory"
+    ],
+    [
+      "system_state_machine"
+    ],
+    [
+      "exchange_intelligence",
+      "exchange_intelligence"
+    ],
+    [
+      "ta_engine",
+      "ta_engine"
+    ],
+    [
+      "portfolio",
+      "portfolio"
+    ],
+    [
+      "institutional_risk",
+      "institutional_risk"
+    ],
+    [
+      "market_structure",
+      "market_structure"
+    ],
+    [
+      "fractal_intelligence"
+    ],
+    [
+      "trading_terminal",
+      "trading_terminal"
+    ],
+    [
+      "regime_memory"
+    ],
+    [
+      "market_simulation"
+    ],
+    [
+      "safety_kill_switch"
+    ],
+    [
+      "meta_alpha",
+      "meta_alpha"
+    ],
+    [
+      "regime_intelligence_v2",
+      "regime_intelligence_v2"
+    ],
+    [
+      "system_metrics"
+    ],
+    [
+      "hypothesis_competition",
+      "hypothesis_competition"
+    ],
+    [
+      "execution",
+      "execution"
+    ],
+    [
+      "infrastructure"
+    ],
+    [
+      "ta_engine"
+    ],
+    [
+      "trading_decision"
+    ],
+    [
+      "global_risk_brain"
+    ],
+    [
+      "regime_graph"
+    ],
+    [
+      "hypothesis_engine"
+    ],
+    [
+      "research_loop"
+    ],
+    [
+      "regime_intelligence_v2"
+    ],
+    [
+      "exchange_sync"
+    ],
+    [
+      "alpha_ecology",
+      "alpha_ecology"
+    ],
+    [
+      "alpha_factory_v2",
+      "alpha_factory_v2"
+    ],
+    [
+      "trading_capsule",
+      "trading_capsule"
+    ],
+    [
+      "circuit_breaker"
+    ],
+    [
+      "research_control",
+      "research_control"
+    ],
+    [
+      "portfolio"
+    ],
+    [
+      "execution"
+    ],
+    [
+      "control_dashboard"
+    ]
+  ],
+  "isolation_issues": [],
+  "db_collections_used": [
+    "candles",
+    "research_experiments",
+    "simulation_metrics",
+    "events",
+    "portfolio_simulations",
+    "strategy_configs",
+    "walkforward_experiments",
+    "vault_audit",
+    "system_state",
+    "portfolio_states",
+    "vault_keys",
+    "allocation_plans",
+    "walk_forward_results",
+    "dead_letter_queue",
+    "strategy_config_versions",
+    "reconciliation_mismatches",
+    "timeline_events",
+    "allocation_snapshots",
+    "portfolio_slots",
+    "reconciliation_runs",
+    "walkforward_runs",
+    "portfolio_snapshots",
+    "portfolio_history",
+    "system_snapshots",
+    "experiment_runs",
+    "state_history",
+    "exchange_quarantine",
+    "walkforward_windows"
+  ],
+  "external_apis_used": [
+    "aiohttp.ClientSession",
+    "httpx.AsyncClient",
+    "aiohttp.ClientTimeout"
+  ],
+  "modules": {
+    "macro_context": {
+      "name": "macro_context",
+      "category": "other",
+      "file_count": 6,
+      "imports": [
+        "math",
+        "macro_context",
+        "os",
+        "sys",
+        "pytest"
+      ],
+      "imported_by": [
+        "macro_context",
+        "system_validation",
+        "execution_context",
+        "macro_fractal_brain",
+        "cross_asset_intelligence"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "edge_lab": {
+      "name": "edge_lab",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "math",
+        "uuid",
+        "time"
+      ],
+      "imported_by": [
+        "admin_control_center"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "meta_alpha_portfolio": {
+      "name": "meta_alpha_portfolio",
+      "category": "core",
+      "file_count": 4,
+      "imports": [
+        "regime"
+      ],
+      "imported_by": [
+        "system_validation",
+        "system_dashboard"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "edge_guard": {
+      "name": "edge_guard",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "math",
+        "hashlib",
+        "time",
+        "random"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "walk_forward": {
+      "name": "walk_forward",
+      "category": "legacy",
+      "file_count": 7,
+      "imports": [
+        "asyncio",
+        "uuid",
+        "numpy",
+        "structural_bias",
+        "math",
+        "time",
+        "os",
+        "random",
+        "portfolio_overlay",
+        "hierarchical_allocator"
+      ],
+      "imported_by": [],
+      "db_collections": [
+        "candles",
+        "walk_forward_results"
+      ],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "alpha_factory": {
+      "name": "alpha_factory",
+      "category": "other",
+      "file_count": 52,
+      "imports": [
+        "alpha_factory",
+        "uuid",
+        "hashlib",
+        "math",
+        "time",
+        "random",
+        "numpy",
+        "json",
+        "pandas",
+        "re"
+      ],
+      "imported_by": [
+        "alpha_factory"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "capital_flow": {
+      "name": "capital_flow",
+      "category": "core",
+      "file_count": 8,
+      "imports": [
+        "portfolio_manager"
+      ],
+      "imported_by": [
+        "system_validation",
+        "hypothesis_engine"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "circuit_breaker": {
+      "name": "circuit_breaker",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "safety_kill_switch",
+        "risk_budget",
+        "portfolio_manager"
+      ],
+      "imported_by": [
+        "system_metrics",
+        "production_scheduler"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "strategy_governance": {
+      "name": "strategy_governance",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "hashlib",
+        "time"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "data": {
+      "name": "data",
+      "category": "provider",
+      "file_count": 2,
+      "imports": [
+        "asyncio",
+        "httpx",
+        "time",
+        "json"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [
+        "httpx.AsyncClient"
+      ],
+      "provider_calls": [],
+      "issues": []
+    },
+    "trade_throttle": {
+      "name": "trade_throttle",
+      "category": "other",
+      "file_count": 3,
+      "imports": [],
+      "imported_by": [
+        "system_dashboard",
+        "stress_testing"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "market_data": {
+      "name": "market_data",
+      "category": "provider",
+      "file_count": 9,
+      "imports": [
+        "asyncio",
+        "statistics",
+        "exchanges",
+        "time",
+        "os",
+        "random",
+        "sys"
+      ],
+      "imported_by": [
+        "portfolio_accounts",
+        "execution"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "shadow_portfolio": {
+      "name": "shadow_portfolio",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "math",
+        "uuid",
+        "time",
+        "random"
+      ],
+      "imported_by": [
+        "admin_control_center",
+        "shadow_stress_lab",
+        "evolution_engine",
+        "research_loop"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "shadow_stress_lab": {
+      "name": "shadow_stress_lab",
+      "category": "other",
+      "file_count": 6,
+      "imports": [
+        "math",
+        "uuid",
+        "time",
+        "shadow_portfolio"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "validation_isolation": {
+      "name": "validation_isolation",
+      "category": "other",
+      "file_count": 6,
+      "imports": [
+        "hashlib",
+        "time",
+        "json"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "event_bus": {
+      "name": "event_bus",
+      "category": "other",
+      "file_count": 7,
+      "imports": [
+        "threading",
+        "uuid",
+        "os",
+        "infrastructure"
+      ],
+      "imported_by": [
+        "system_state_machine",
+        "global_risk_brain",
+        "research_loop",
+        "strategy_lifecycle",
+        "evolution_engine",
+        "infrastructure",
+        "market_reality",
+        "autopsy_engine",
+        "system_timeline"
+      ],
+      "db_collections": [
+        "events"
+      ],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "fractal_similarity": {
+      "name": "fractal_similarity",
+      "category": "core",
+      "file_count": 6,
+      "imports": [
+        "math",
+        "hashlib",
+        "pytest"
+      ],
+      "imported_by": [
+        "system_validation",
+        "hypothesis_engine",
+        "system_control",
+        "market_simulation"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "cross_asset_intelligence": {
+      "name": "cross_asset_intelligence",
+      "category": "other",
+      "file_count": 8,
+      "imports": [
+        "macro_context",
+        "cross_asset_intelligence",
+        "os",
+        "sys",
+        "pytest",
+        "fractal_intelligence"
+      ],
+      "imported_by": [
+        "system_validation",
+        "cross_asset_intelligence",
+        "macro_fractal_brain",
+        "execution_context"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "global_risk_brain": {
+      "name": "global_risk_brain",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "math",
+        "event_bus",
+        "uuid",
+        "time"
+      ],
+      "imported_by": [
+        "admin_control_center",
+        "control_backend"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "orthogonal_alpha": {
+      "name": "orthogonal_alpha",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "math",
+        "uuid",
+        "time"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "system_intelligence": {
+      "name": "system_intelligence",
+      "category": "other",
+      "file_count": 9,
+      "imports": [
+        "random"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "alpha_decay": {
+      "name": "alpha_decay",
+      "category": "core",
+      "file_count": 5,
+      "imports": [
+        "math",
+        "os"
+      ],
+      "imported_by": [
+        "system_validation",
+        "system_dashboard"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "control_backend": {
+      "name": "control_backend",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "system_state_machine",
+        "global_risk_brain",
+        "uuid",
+        "research_loop",
+        "strategy_lifecycle",
+        "os",
+        "alpha_registry",
+        "feature_factory",
+        "random",
+        "system_timeline"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "portfolio_manager": {
+      "name": "portfolio_manager",
+      "category": "core",
+      "file_count": 6,
+      "imports": [
+        "math",
+        "portfolio_manager",
+        "random",
+        "hashlib",
+        "pytest",
+        "numpy"
+      ],
+      "imported_by": [
+        "system_validation",
+        "circuit_breaker",
+        "safety_kill_switch",
+        "execution_reconciliation",
+        "control_dashboard",
+        "portfolio_manager",
+        "capital_flow",
+        "exchange_sync"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "system_validation": {
+      "name": "system_validation",
+      "category": "core",
+      "file_count": 11,
+      "imports": [
+        "system_validation",
+        "macro_fractal_brain",
+        "meta_alpha_portfolio",
+        "portfolio_manager",
+        "time",
+        "random",
+        "capital_flow",
+        "reflexivity_engine",
+        "fractal_intelligence",
+        "stress_testing",
+        "macro_context",
+        "regime_graph",
+        "execution_context",
+        "execution_brain",
+        "alpha_decay",
+        "hypothesis_engine",
+        "risk_budget",
+        "fractal_similarity",
+        "cross_asset_intelligence",
+        "numpy",
+        "pytest",
+        "system_chaos"
+      ],
+      "imported_by": [
+        "system_validation"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "capital_allocation_v2": {
+      "name": "capital_allocation_v2",
+      "category": "other",
+      "file_count": 25,
+      "imports": [
+        "research_loop",
+        "unittest",
+        "capital_allocation_v2"
+      ],
+      "imported_by": [
+        "capital_allocation_v2"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "portfolio_intelligence": {
+      "name": "portfolio_intelligence",
+      "category": "other",
+      "file_count": 11,
+      "imports": [
+        "math",
+        "random"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "regime_memory": {
+      "name": "regime_memory",
+      "category": "core",
+      "file_count": 8,
+      "imports": [
+        "hashlib",
+        "math",
+        "regime_memory",
+        "microstructure_intelligence_v2",
+        "fractal_market_intelligence",
+        "pytest",
+        "regime_intelligence_v2"
+      ],
+      "imported_by": [
+        "hypothesis_engine",
+        "hypothesis_competition",
+        "regime_memory",
+        "regime_graph"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "autopsy_engine": {
+      "name": "autopsy_engine",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "math",
+        "uuid",
+        "time",
+        "event_bus"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "system_state_machine": {
+      "name": "system_state_machine",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "event_bus",
+        "threading",
+        "uuid",
+        "os"
+      ],
+      "imported_by": [
+        "control_backend"
+      ],
+      "db_collections": [
+        "state_history",
+        "system_state"
+      ],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "exchange_intelligence": {
+      "name": "exchange_intelligence",
+      "category": "provider",
+      "file_count": 15,
+      "imports": [
+        "math",
+        "os",
+        "exchange_intelligence",
+        "sys"
+      ],
+      "imported_by": [
+        "exchange_intelligence",
+        "alpha_interactions",
+        "trading_product",
+        "trading_decision"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "alpha_interactions": {
+      "name": "alpha_interactions",
+      "category": "other",
+      "file_count": 22,
+      "imports": [
+        "asyncio",
+        "ta_engine",
+        "exchange_intelligence",
+        "alpha_interactions",
+        "os",
+        "sys",
+        "trading_decision",
+        "pytest",
+        "alpha_ecology",
+        "fractal_intelligence"
+      ],
+      "imported_by": [
+        "strategy_brain",
+        "alpha_interactions",
+        "trading_decision"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "trading_product": {
+      "name": "trading_product",
+      "category": "other",
+      "file_count": 7,
+      "imports": [
+        "asyncio",
+        "portfolio",
+        "exchange_intelligence",
+        "trading",
+        "market_structure",
+        "trading_product",
+        "os",
+        "ta_engine",
+        "trading_decision",
+        "pytest",
+        "sys",
+        "fractal_intelligence"
+      ],
+      "imported_by": [
+        "trading_product"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "research": {
+      "name": "research",
+      "category": "other",
+      "file_count": 70,
+      "imports": [
+        "threading",
+        "uuid",
+        "statistics",
+        "os",
+        "math",
+        "time",
+        "random"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "institutional_risk": {
+      "name": "institutional_risk",
+      "category": "other",
+      "file_count": 40,
+      "imports": [
+        "institutional_risk",
+        "pytest"
+      ],
+      "imported_by": [
+        "institutional_risk"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "market_structure": {
+      "name": "market_structure",
+      "category": "other",
+      "file_count": 8,
+      "imports": [
+        "market_structure",
+        "os",
+        "random",
+        "sys"
+      ],
+      "imported_by": [
+        "strategy_brain",
+        "market_structure",
+        "trading_product",
+        "trading_decision"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "broker_adapters": {
+      "name": "broker_adapters",
+      "category": "provider",
+      "file_count": 7,
+      "imports": [
+        "asyncio",
+        "uuid",
+        "hashlib",
+        "hmac",
+        "httpx",
+        "time",
+        "random"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [
+        "httpx.AsyncClient"
+      ],
+      "provider_calls": [],
+      "issues": []
+    },
+    "strategy_brain": {
+      "name": "strategy_brain",
+      "category": "other",
+      "file_count": 29,
+      "imports": [
+        "os",
+        "sys",
+        "fractal_intelligence",
+        "asyncio",
+        "trading",
+        "alpha_interactions",
+        "strategy_brain",
+        "hypothesis_engine",
+        "market_structure",
+        "microstructure_intelligence_v2",
+        "trading_decision",
+        "pytest",
+        "regime_intelligence_v2"
+      ],
+      "imported_by": [
+        "strategy_brain"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "realtime_streams": {
+      "name": "realtime_streams",
+      "category": "other",
+      "file_count": 3,
+      "imports": [
+        "asyncio",
+        "json"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "trading_terminal": {
+      "name": "trading_terminal",
+      "category": "other",
+      "file_count": 69,
+      "imports": [
+        "asyncio",
+        "threading",
+        "uuid",
+        "hashlib",
+        "os",
+        "secrets",
+        "trading_terminal",
+        "time",
+        "json",
+        "random",
+        "security"
+      ],
+      "imported_by": [
+        "trading_terminal"
+      ],
+      "db_collections": [
+        "exchange_quarantine",
+        "reconciliation_runs",
+        "reconciliation_mismatches"
+      ],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "system_control": {
+      "name": "system_control",
+      "category": "core",
+      "file_count": 8,
+      "imports": [
+        "uuid",
+        "hashlib",
+        "market_simulation",
+        "capital_allocation",
+        "hypothesis_engine",
+        "fractal_similarity",
+        "microstructure_intelligence_v2",
+        "cross_asset_similarity",
+        "pytest",
+        "regime_intelligence_v2"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "execution_brain": {
+      "name": "execution_brain",
+      "category": "core",
+      "file_count": 7,
+      "imports": [
+        "hashlib",
+        "liquidity_impact",
+        "pytest",
+        "market_simulation"
+      ],
+      "imported_by": [
+        "system_validation"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "policy_engine": {
+      "name": "policy_engine",
+      "category": "other",
+      "file_count": 3,
+      "imports": [
+        "uuid",
+        "time"
+      ],
+      "imported_by": [
+        "admin_control_center"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "macro_fractal_brain": {
+      "name": "macro_fractal_brain",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "macro_context",
+        "macro_fractal_brain",
+        "cross_asset_intelligence",
+        "os",
+        "sys",
+        "pytest",
+        "fractal_intelligence"
+      ],
+      "imported_by": [
+        "system_validation",
+        "macro_fractal_brain",
+        "execution_context"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "system_metrics": {
+      "name": "system_metrics",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "safety_kill_switch",
+        "time",
+        "psutil",
+        "os",
+        "circuit_breaker"
+      ],
+      "imported_by": [
+        "system_dashboard",
+        "system_chaos",
+        "stress_testing"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "validation_governance": {
+      "name": "validation_governance",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "hashlib",
+        "time"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "security": {
+      "name": "security",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "threading",
+        "uuid",
+        "time",
+        "random",
+        "os"
+      ],
+      "imported_by": [
+        "trading_terminal"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "evolution_engine": {
+      "name": "evolution_engine",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "uuid",
+        "event_bus",
+        "research_memory",
+        "shadow_portfolio",
+        "alpha_registry",
+        "math",
+        "time",
+        "random"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "microstructure_lab": {
+      "name": "microstructure_lab",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "math",
+        "uuid",
+        "time",
+        "random"
+      ],
+      "imported_by": [
+        "admin_control_center"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "meta_alpha": {
+      "name": "meta_alpha",
+      "category": "core",
+      "file_count": 6,
+      "imports": [
+        "math",
+        "asyncio",
+        "meta_alpha",
+        "hashlib",
+        "pytest",
+        "hypothesis_competition"
+      ],
+      "imported_by": [
+        "fractal_market_intelligence",
+        "meta_alpha",
+        "hypothesis_competition",
+        "market_simulation"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "hierarchical_allocator": {
+      "name": "hierarchical_allocator",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "numpy",
+        "alpha_combination"
+      ],
+      "imported_by": [
+        "walk_forward"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "cross_asset_walkforward": {
+      "name": "cross_asset_walkforward",
+      "category": "other",
+      "file_count": 11,
+      "imports": [
+        "math",
+        "asyncio",
+        "uuid",
+        "time",
+        "os",
+        "hashlib"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "dataset_registry": {
+      "name": "dataset_registry",
+      "category": "other",
+      "file_count": 3,
+      "imports": [
+        "hashlib",
+        "time"
+      ],
+      "imported_by": [
+        "admin_control_center"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "cross_asset_similarity": {
+      "name": "cross_asset_similarity",
+      "category": "other",
+      "file_count": 6,
+      "imports": [
+        "math",
+        "microstructure_intelligence_v2",
+        "hashlib",
+        "pytest",
+        "regime_intelligence_v2"
+      ],
+      "imported_by": [
+        "hypothesis_engine",
+        "system_control"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "simulation_engine": {
+      "name": "simulation_engine",
+      "category": "core",
+      "file_count": 28,
+      "imports": [
+        "pytest"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "stress_testing": {
+      "name": "stress_testing",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "asyncio",
+        "time",
+        "psutil",
+        "system_metrics",
+        "trade_throttle",
+        "pilot_mode"
+      ],
+      "imported_by": [
+        "system_validation"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "portfolio_safety": {
+      "name": "portfolio_safety",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "math",
+        "time"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "microstructure_intelligence_v2": {
+      "name": "microstructure_intelligence_v2",
+      "category": "other",
+      "file_count": 25,
+      "imports": [
+        "asyncio",
+        "statistics",
+        "os",
+        "random",
+        "pytest"
+      ],
+      "imported_by": [
+        "system_control",
+        "hypothesis_competition",
+        "liquidity_impact",
+        "strategy_brain",
+        "hypothesis_engine",
+        "market_simulation",
+        "regime_memory",
+        "cross_asset_similarity"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "hypothesis_competition": {
+      "name": "hypothesis_competition",
+      "category": "other",
+      "file_count": 24,
+      "imports": [
+        "asyncio",
+        "hypothesis_competition",
+        "hypothesis_engine",
+        "math",
+        "meta_alpha",
+        "regime_memory",
+        "microstructure_intelligence_v2",
+        "os",
+        "pytest",
+        "regime_intelligence_v2"
+      ],
+      "imported_by": [
+        "meta_alpha",
+        "hypothesis_competition"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "execution": {
+      "name": "execution",
+      "category": "other",
+      "file_count": 43,
+      "imports": [
+        "market_data",
+        "statistics",
+        "uuid",
+        "random",
+        "execution",
+        "os",
+        "time",
+        "sys"
+      ],
+      "imported_by": [
+        "execution_gateway",
+        "control_dashboard",
+        "execution"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "risk_regime": {
+      "name": "risk_regime",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "math",
+        "uuid",
+        "time"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "infrastructure": {
+      "name": "infrastructure",
+      "category": "other",
+      "file_count": 8,
+      "imports": [
+        "threading",
+        "event_bus",
+        "strategy_lifecycle",
+        "time",
+        "os",
+        "random",
+        "asyncio",
+        "concurrent.futures",
+        "statistics",
+        "uuid",
+        "hashlib",
+        "functools",
+        "signal",
+        "json",
+        "system_timeline"
+      ],
+      "imported_by": [
+        "event_bus"
+      ],
+      "db_collections": [
+        "dead_letter_queue"
+      ],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "research_memory": {
+      "name": "research_memory",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "hashlib",
+        "uuid",
+        "time"
+      ],
+      "imported_by": [
+        "admin_control_center",
+        "evolution_engine",
+        "research_loop"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "trading_decision": {
+      "name": "trading_decision",
+      "category": "other",
+      "file_count": 25,
+      "imports": [
+        "ta_engine",
+        "exchange_intelligence",
+        "trading",
+        "alpha_interactions",
+        "market_structure",
+        "os",
+        "sys",
+        "trading_decision"
+      ],
+      "imported_by": [
+        "alpha_interactions",
+        "trading",
+        "strategy_brain",
+        "trading_product",
+        "trading_decision"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "trading": {
+      "name": "trading",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "sys",
+        "trading_decision",
+        "alpha_ecology",
+        "os"
+      ],
+      "imported_by": [
+        "strategy_brain",
+        "trading_product",
+        "trading_decision"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "admin_control_center": {
+      "name": "admin_control_center",
+      "category": "other",
+      "file_count": 3,
+      "imports": [
+        "global_risk_brain",
+        "dataset_registry",
+        "research_loop",
+        "capital_simulation",
+        "research_memory",
+        "microstructure_lab",
+        "shadow_portfolio",
+        "alpha_registry",
+        "edge_lab",
+        "experiment_tracker",
+        "time",
+        "alpha_tournament",
+        "policy_engine"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "system_dashboard": {
+      "name": "system_dashboard",
+      "category": "other",
+      "file_count": 1,
+      "imports": [
+        "system_metrics",
+        "trade_throttle",
+        "alpha_decay",
+        "pilot_mode",
+        "execution_reconciliation",
+        "meta_alpha_portfolio",
+        "os",
+        "exchange_sync"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "feature_factory": {
+      "name": "feature_factory",
+      "category": "other",
+      "file_count": 8,
+      "imports": [
+        "math",
+        "uuid",
+        "time"
+      ],
+      "imported_by": [
+        "control_backend",
+        "research_loop"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "exchange_sync": {
+      "name": "exchange_sync",
+      "category": "provider",
+      "file_count": 3,
+      "imports": [
+        "asyncio",
+        "exchanges",
+        "portfolio_manager",
+        "os"
+      ],
+      "imported_by": [
+        "execution_reconciliation",
+        "system_dashboard",
+        "system_chaos"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "ta_engine": {
+      "name": "ta_engine",
+      "category": "other",
+      "file_count": 7,
+      "imports": [
+        "math",
+        "os",
+        "ta_engine",
+        "sys",
+        "traceback"
+      ],
+      "imported_by": [
+        "alpha_interactions",
+        "trading_product",
+        "ta_engine",
+        "trading_decision"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "regime_graph": {
+      "name": "regime_graph",
+      "category": "core",
+      "file_count": 6,
+      "imports": [
+        "hashlib",
+        "pytest",
+        "regime_memory",
+        "regime_intelligence_v2"
+      ],
+      "imported_by": [
+        "system_validation",
+        "hypothesis_engine"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "fractal_market_intelligence": {
+      "name": "fractal_market_intelligence",
+      "category": "core",
+      "file_count": 6,
+      "imports": [
+        "hypothesis_engine",
+        "asyncio",
+        "fractal_market_intelligence",
+        "meta_alpha",
+        "hashlib",
+        "pytest"
+      ],
+      "imported_by": [
+        "fractal_market_intelligence",
+        "regime_memory"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "execution_reconciliation": {
+      "name": "execution_reconciliation",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "asyncio",
+        "portfolio_manager",
+        "exchange_sync"
+      ],
+      "imported_by": [
+        "system_dashboard"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "hypothesis_engine": {
+      "name": "hypothesis_engine",
+      "category": "core",
+      "file_count": 12,
+      "imports": [
+        "asyncio",
+        "regime_graph",
+        "math",
+        "hypothesis_engine",
+        "fractal_similarity",
+        "cross_asset_similarity",
+        "regime_memory",
+        "microstructure_intelligence_v2",
+        "os",
+        "capital_flow",
+        "pytest",
+        "reflexivity_engine",
+        "regime_intelligence_v2"
+      ],
+      "imported_by": [
+        "system_control",
+        "system_validation",
+        "hypothesis_competition",
+        "market_simulation",
+        "strategy_brain",
+        "hypothesis_engine",
+        "fractal_market_intelligence"
+      ],
+      "db_collections": [
+        "candles"
+      ],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "risk_budget": {
+      "name": "risk_budget",
+      "category": "core",
+      "file_count": 6,
+      "imports": [
+        "math",
+        "random",
+        "hashlib",
+        "pytest"
+      ],
+      "imported_by": [
+        "system_validation",
+        "circuit_breaker",
+        "safety_kill_switch",
+        "control_dashboard",
+        "production_scheduler",
+        "execution_gateway"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "adaptive_intelligence": {
+      "name": "adaptive_intelligence",
+      "category": "other",
+      "file_count": 16,
+      "imports": [
+        "math",
+        "random"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "research_loop": {
+      "name": "research_loop",
+      "category": "other",
+      "file_count": 30,
+      "imports": [
+        "asyncio",
+        "uuid",
+        "research_loop",
+        "event_bus",
+        "research_memory",
+        "os",
+        "shadow_portfolio",
+        "unittest",
+        "alpha_registry",
+        "feature_factory",
+        "time",
+        "random",
+        "pytest",
+        "alpha_tournament"
+      ],
+      "imported_by": [
+        "capital_allocation_v2",
+        "control_backend",
+        "admin_control_center",
+        "research_loop"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "strategy_discovery": {
+      "name": "strategy_discovery",
+      "category": "other",
+      "file_count": 7,
+      "imports": [
+        "math",
+        "time"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "alpha_tournament": {
+      "name": "alpha_tournament",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "uuid",
+        "time"
+      ],
+      "imported_by": [
+        "admin_control_center",
+        "research_loop"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "admin_cockpit": {
+      "name": "admin_cockpit",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "yaml",
+        "copy",
+        "time",
+        "os",
+        "hashlib",
+        "json"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "system_timeline": {
+      "name": "system_timeline",
+      "category": "other",
+      "file_count": 3,
+      "imports": [
+        "event_bus",
+        "uuid",
+        "time",
+        "os"
+      ],
+      "imported_by": [
+        "control_backend",
+        "infrastructure"
+      ],
+      "db_collections": [
+        "timeline_events",
+        "system_snapshots"
+      ],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "regime_intelligence_v2": {
+      "name": "regime_intelligence_v2",
+      "category": "other",
+      "file_count": 20,
+      "imports": [
+        "os",
+        "random",
+        "pytest",
+        "regime_intelligence_v2"
+      ],
+      "imported_by": [
+        "system_control",
+        "regime_graph",
+        "hypothesis_competition",
+        "market_simulation",
+        "strategy_brain",
+        "hypothesis_engine",
+        "control_dashboard",
+        "regime_memory",
+        "cross_asset_similarity",
+        "regime_intelligence_v2"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "portfolio_overlay": {
+      "name": "portfolio_overlay",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "math"
+      ],
+      "imported_by": [
+        "walk_forward"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "execution_context": {
+      "name": "execution_context",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "macro_context",
+        "execution_context",
+        "macro_fractal_brain",
+        "cross_asset_intelligence",
+        "pytest",
+        "fractal_intelligence"
+      ],
+      "imported_by": [
+        "system_validation",
+        "execution_context"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "capital_simulation": {
+      "name": "capital_simulation",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "math",
+        "uuid",
+        "time"
+      ],
+      "imported_by": [
+        "admin_control_center"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "system_chaos": {
+      "name": "system_chaos",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "asyncio",
+        "exchange_sync",
+        "system_metrics",
+        "random"
+      ],
+      "imported_by": [
+        "system_validation"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "alpha_ecology": {
+      "name": "alpha_ecology",
+      "category": "other",
+      "file_count": 15,
+      "imports": [
+        "math",
+        "os",
+        "random",
+        "sys",
+        "alpha_ecology"
+      ],
+      "imported_by": [
+        "alpha_interactions",
+        "trading",
+        "alpha_ecology"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "core": {
+      "name": "core",
+      "category": "other",
+      "file_count": 7,
+      "imports": [
+        "threading",
+        "uuid",
+        "time",
+        "os"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "self_healing": {
+      "name": "self_healing",
+      "category": "other",
+      "file_count": 2,
+      "imports": [
+        "math",
+        "hashlib",
+        "time"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "meta_strategy": {
+      "name": "meta_strategy",
+      "category": "other",
+      "file_count": 1,
+      "imports": [
+        "math",
+        "hashlib",
+        "time"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "market_reality": {
+      "name": "market_reality",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "math",
+        "uuid",
+        "time",
+        "random",
+        "event_bus"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "alpha_factory_v2": {
+      "name": "alpha_factory_v2",
+      "category": "other",
+      "file_count": 21,
+      "imports": [
+        "asyncio",
+        "alpha_factory_v2",
+        "hashlib",
+        "math",
+        "os",
+        "random",
+        "pytest"
+      ],
+      "imported_by": [
+        "alpha_factory_v2"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "strategy_lifecycle": {
+      "name": "strategy_lifecycle",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "event_bus",
+        "uuid",
+        "time"
+      ],
+      "imported_by": [
+        "control_backend",
+        "infrastructure"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "trading_capsule": {
+      "name": "trading_capsule",
+      "category": "other",
+      "file_count": 265,
+      "imports": [
+        "threading",
+        "hmac",
+        "secrets",
+        "httpx",
+        "time",
+        "os",
+        "random",
+        "asyncio",
+        "statistics",
+        "uuid",
+        "base64",
+        "hashlib",
+        "math",
+        "copy",
+        "trading_capsule",
+        "json"
+      ],
+      "imported_by": [
+        "trading_capsule"
+      ],
+      "db_collections": [
+        "research_experiments",
+        "strategy_config_versions",
+        "simulation_metrics",
+        "portfolio_simulations",
+        "allocation_snapshots",
+        "portfolio_slots",
+        "strategy_configs",
+        "walkforward_experiments",
+        "walkforward_runs",
+        "vault_audit",
+        "portfolio_states",
+        "experiment_runs",
+        "allocation_plans",
+        "vault_keys",
+        "walkforward_windows"
+      ],
+      "external_apis": [
+        "httpx.AsyncClient"
+      ],
+      "provider_calls": [],
+      "issues": []
+    },
+    "alpha_combination": {
+      "name": "alpha_combination",
+      "category": "other",
+      "file_count": 7,
+      "imports": [
+        "numpy"
+      ],
+      "imported_by": [
+        "hierarchical_allocator"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "alpha_registry": {
+      "name": "alpha_registry",
+      "category": "other",
+      "file_count": 6,
+      "imports": [
+        "math",
+        "uuid",
+        "time"
+      ],
+      "imported_by": [
+        "admin_control_center",
+        "control_backend",
+        "evolution_engine",
+        "research_loop"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "structural_bias": {
+      "name": "structural_bias",
+      "category": "other",
+      "file_count": 5,
+      "imports": [
+        "math"
+      ],
+      "imported_by": [
+        "walk_forward"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "production_scheduler": {
+      "name": "production_scheduler",
+      "category": "other",
+      "file_count": 3,
+      "imports": [
+        "asyncio",
+        "circuit_breaker",
+        "control_dashboard",
+        "risk_budget"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "portfolio_accounts": {
+      "name": "portfolio_accounts",
+      "category": "other",
+      "file_count": 9,
+      "imports": [
+        "market_data",
+        "exchanges",
+        "os",
+        "random",
+        "sys"
+      ],
+      "imported_by": [],
+      "db_collections": [
+        "portfolio_snapshots",
+        "portfolio_history",
+        "portfolio_states"
+      ],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "validation": {
+      "name": "validation",
+      "category": "legacy",
+      "file_count": 19,
+      "imports": [
+        "aiohttp",
+        "asyncio",
+        "hashlib",
+        "os",
+        "math",
+        "time",
+        "random",
+        "json",
+        "sys",
+        "argparse"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [
+        "aiohttp.ClientSession",
+        "aiohttp.ClientTimeout"
+      ],
+      "provider_calls": [],
+      "issues": []
+    },
+    "market_intelligence": {
+      "name": "market_intelligence",
+      "category": "other",
+      "file_count": 28,
+      "imports": [
+        "math",
+        "statistics",
+        "uuid",
+        "os",
+        "random"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "fractal_intelligence": {
+      "name": "fractal_intelligence",
+      "category": "other",
+      "file_count": 14,
+      "imports": [
+        "httpx",
+        "os",
+        "sys",
+        "pytest",
+        "fractal_intelligence",
+        "logging"
+      ],
+      "imported_by": [
+        "system_validation",
+        "alpha_interactions",
+        "execution_context",
+        "macro_fractal_brain",
+        "strategy_brain",
+        "control_dashboard",
+        "trading_product",
+        "cross_asset_intelligence",
+        "fractal_intelligence"
+      ],
+      "db_collections": [],
+      "external_apis": [
+        "httpx.AsyncClient"
+      ],
+      "provider_calls": [],
+      "issues": []
+    },
+    "research_control": {
+      "name": "research_control",
+      "category": "other",
+      "file_count": 39,
+      "imports": [
+        "research_control",
+        "math",
+        "os",
+        "random",
+        "sys",
+        "pytest"
+      ],
+      "imported_by": [
+        "research_control"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "safety_kill_switch": {
+      "name": "safety_kill_switch",
+      "category": "other",
+      "file_count": 4,
+      "imports": [
+        "control_dashboard",
+        "portfolio_manager",
+        "execution_gateway",
+        "risk_budget"
+      ],
+      "imported_by": [
+        "system_metrics",
+        "circuit_breaker"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "pilot_mode": {
+      "name": "pilot_mode",
+      "category": "other",
+      "file_count": 2,
+      "imports": [],
+      "imported_by": [
+        "system_dashboard",
+        "stress_testing"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "portfolio": {
+      "name": "portfolio",
+      "category": "other",
+      "file_count": 24,
+      "imports": [
+        "os",
+        "sys",
+        "pytest",
+        "portfolio"
+      ],
+      "imported_by": [
+        "trading_product",
+        "portfolio"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "execution_gateway": {
+      "name": "execution_gateway",
+      "category": "other",
+      "file_count": 6,
+      "imports": [
+        "asyncio",
+        "exchanges",
+        "math",
+        "risk_budget",
+        "execution",
+        "os",
+        "random",
+        "pytest"
+      ],
+      "imported_by": [
+        "safety_kill_switch",
+        "control_dashboard"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "experiment_tracker": {
+      "name": "experiment_tracker",
+      "category": "other",
+      "file_count": 3,
+      "imports": [
+        "uuid",
+        "time"
+      ],
+      "imported_by": [
+        "admin_control_center"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "reflexivity_engine": {
+      "name": "reflexivity_engine",
+      "category": "core",
+      "file_count": 6,
+      "imports": [
+        "math",
+        "hashlib",
+        "pytest"
+      ],
+      "imported_by": [
+        "system_validation",
+        "control_dashboard",
+        "hypothesis_engine"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "liquidity_impact": {
+      "name": "liquidity_impact",
+      "category": "other",
+      "file_count": 6,
+      "imports": [
+        "hashlib",
+        "pytest",
+        "microstructure_intelligence_v2"
+      ],
+      "imported_by": [
+        "execution_brain"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "control_dashboard": {
+      "name": "control_dashboard",
+      "category": "other",
+      "file_count": 8,
+      "imports": [
+        "asyncio",
+        "hypothesis_engine_v2",
+        "fractal_intelligence",
+        "market_simulation",
+        "risk_budget",
+        "portfolio_manager",
+        "execution_gateway",
+        "execution",
+        "pytest",
+        "reflexivity_engine",
+        "regime_intelligence_v2"
+      ],
+      "imported_by": [
+        "safety_kill_switch",
+        "production_scheduler"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "validation_guardrails": {
+      "name": "validation_guardrails",
+      "category": "other",
+      "file_count": 6,
+      "imports": [
+        "math",
+        "time"
+      ],
+      "imported_by": [],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "market_simulation": {
+      "name": "market_simulation",
+      "category": "other",
+      "file_count": 6,
+      "imports": [
+        "hashlib",
+        "math",
+        "hypothesis_engine",
+        "fractal_similarity",
+        "meta_alpha",
+        "microstructure_intelligence_v2",
+        "pytest",
+        "regime_intelligence_v2"
+      ],
+      "imported_by": [
+        "execution_brain",
+        "control_dashboard",
+        "system_control"
+      ],
+      "db_collections": [],
+      "external_apis": [],
+      "provider_calls": [],
+      "issues": []
+    },
+    "exchanges": {
+      "name": "exchanges",
+      "category": "provider",
+      "file_count": 10,
+      "imports": [
+        "asyncio",
+        "uuid",
+        "base64",
+        "hashlib",
+        "os",
+        "hmac",
+        "httpx",
+        "time",
+        "random",
+        "json"
+      ],
+      "imported_by": [
+        "portfolio_accounts",
+        "market_data",
+        "execution_gateway",
+        "exchange_sync"
+      ],
+      "db_collections": [],
+      "external_apis": [
+        "httpx.AsyncClient"
+      ],
+      "provider_calls": [],
+      "issues": []
+    }
+  }
+}

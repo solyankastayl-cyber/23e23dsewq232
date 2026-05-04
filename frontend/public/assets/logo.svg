@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FOMO logomark — minimal pulse / signal mark, single colour, scalable. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" aria-label="FOMO">
+  <rect width="32" height="32" rx="8" fill="#0F172A"/>
+  <path d="M6 16 H10 L12.5 10 L16 22 L19 14 L21.5 18 L26 18"
+        stroke="#22C55E"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"/>
+</svg>

@@ -1,0 +1,216 @@
+{
+  "version": "pattern_families_v7",
+  "indicators": {
+    "count": 15,
+    "core": [
+      "sma",
+      "ema",
+      "rsi",
+      "macd",
+      "bollinger",
+      "atr",
+      "vwap",
+      "supertrend",
+      "volume_profile"
+    ],
+    "phase_ta1": [
+      "cci",
+      "williams_r",
+      "ichimoku",
+      "parabolic_sar",
+      "donchian",
+      "keltner"
+    ]
+  },
+  "pattern_families_v2": {
+    "architecture": "unified_family_detector",
+    "pipeline": "Swings \u2192 FamilyClassifier \u2192 FamilyDetectors(3) \u2192 WindowValidator \u2192 Ranking \u2192 VisualMode \u2192 Triggers \u2192 RenderContract",
+    "total_patterns_ready": 17,
+    "modules": {
+      "swing_engine": "Universal swing high/low detection from OHLCV",
+      "geometry_engine": "Unified geometric primitives (line slopes, touches, angles)",
+      "pattern_window_validator": "Rejects noise/invalid patterns (window too wide, no pretrend, etc)",
+      "visual_mode_resolver": "Controls what frontend can render - NO MIXING",
+      "family_classifier": "Routes candle data to correct family detector",
+      "family_ranking": "Ranks all candidates, computes dominance-based confidence",
+      "pattern_regime_binding": "Contextual meaning: same pattern \u2260 same action in different regimes",
+      "trigger_engine": "Calculates breakout/breakdown/invalidation levels",
+      "pattern_render_builder": "Builds unified SVG render contract for frontend",
+      "unified_detector": "Single entry point: detect_patterns_v2(candles) \u2014 runs ALL 3 families"
+    },
+    "families_implemented": {
+      "horizontal": {
+        "module": "horizontal_family.py",
+        "patterns": [
+          "double_top",
+          "double_bottom",
+          "triple_top",
+          "triple_bottom",
+          "range",
+          "rectangle"
+        ],
+        "count": 6,
+        "render_mode": "polyline | box",
+        "visual_mode": "horizontal_pattern | range_only",
+        "status": "DONE"
+      },
+      "converging": {
+        "module": "converging_family.py",
+        "patterns": [
+          "symmetrical_triangle",
+          "ascending_triangle",
+          "descending_triangle",
+          "rising_wedge",
+          "falling_wedge"
+        ],
+        "count": 5,
+        "render_mode": "two_lines",
+        "visual_mode": "compression_pattern",
+        "status": "DONE"
+      },
+      "parallel": {
+        "module": "parallel_family.py",
+        "patterns": [
+          "ascending_channel",
+          "descending_channel",
+          "horizontal_channel",
+          "bull_flag",
+          "bear_flag",
+          "pennant"
+        ],
+        "count": 6,
+        "render_mode": "two_lines",
+        "visual_mode": "compression_pattern",
+        "status": "DONE"
+      },
+      "swing_composite": {
+        "module": "swing_composite_family.py (pending)",
+        "patterns": [
+          "head_shoulders",
+          "inverse_head_shoulders",
+          "complex_top",
+          "complex_bottom",
+          "rounded_top",
+          "rounded_bottom"
+        ],
+        "count": 0,
+        "render_mode": "hs | polyline",
+        "visual_mode": "swing_pattern",
+        "status": "P1_NEXT"
+      },
+      "regime": {
+        "module": "regime_family.py (pending)",
+        "patterns": [
+          "squeeze",
+          "balance",
+          "expansion",
+          "volatility_contraction"
+        ],
+        "count": 0,
+        "status": "P2"
+      }
+    },
+    "visual_modes": {
+      "range_only": "box + R/S + triggers (NO swings, NO polyline)",
+      "horizontal_pattern": "polyline + neckline (NO range, NO swings)",
+      "compression_pattern": "trendlines only (NO range, NO swings)",
+      "swing_pattern": "H&S polyline + shoulders (NO range)",
+      "structure_only": "HH/HL/LL only (NO patterns)",
+      "none": "clean chart"
+    },
+    "window_validator": {
+      "enabled": true,
+      "principle": "Better to show NO PATTERN than garbage",
+      "checks": [
+        "window_size (max 40 bars for 4H)",
+        "peak_alignment (\u00b13.5% for triple, \u00b12.5% for double)",
+        "pre_trend (uptrend before top, downtrend before bottom)",
+        "depth_check (min 2% depth)",
+        "range_conflict (penalize if inside range)",
+        "structural_integrity (correct # of swings)"
+      ]
+    },
+    "confidence_model": {
+      "type": "dominance_based",
+      "description": "Confidence = gap between #1 and #2 pattern, NOT geometric quality",
+      "max": 0.92,
+      "never_100": true,
+      "states": {
+        "CLEAR": "Can trade (high dominance, single strong pattern)",
+        "WEAK": "Trade with caution",
+        "CONFLICTED": "Don't trade (competing patterns)",
+        "COMPRESSION": "Wait for breakout",
+        "NONE": "No pattern detected"
+      }
+    },
+    "regime_binding": {
+      "enabled": true,
+      "description": "Pattern meaning changes by market context",
+      "actionability_levels": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "NONE"
+      ]
+    },
+    "trigger_engine": {
+      "enabled": true,
+      "trigger_types": [
+        "breakout_up",
+        "breakout_down",
+        "invalidation"
+      ],
+      "description": "What must happen for pattern to become valid"
+    },
+    "render_contract": {
+      "enabled": true,
+      "modes": [
+        "two_lines",
+        "polyline",
+        "box",
+        "hs"
+      ],
+      "description": "Single format for ALL patterns. Frontend: switch(render_mode) \u2192 draw()"
+    }
+  },
+  "api_endpoints": {
+    "primary": "GET /api/ta-engine/pattern-v2/{symbol}?timeframe=4H",
+    "legacy_mtf": "GET /api/ta-engine/mtf/{symbol}?timeframes=...",
+    "health": "GET /api/health"
+  },
+  "frontend_v2": {
+    "theme": "light + dark panels",
+    "chart_library": "lightweight-charts v5.1.0",
+    "entry_route": "/tech-analysis",
+    "components": {
+      "usePatternV2": "Hook \u2192 fetches /api/ta-engine/pattern-v2/{symbol}",
+      "patternRenderAdapter": "Normalizes backend V2 response for frontend",
+      "PatternStateCard": "Decision-grade UI: state + triggers + actionability (WHITE background)",
+      "PatternSVGOverlay": "Renders based on visual_mode \u2014 NO MIXING allowed"
+    },
+    "visual_mode_principle": "Frontend OBEYS visual_mode from backend. 1 mode = 1 visual. NO mixing.",
+    "design_principle": "1 screen = 1 dominant pattern + its triggers + its state. No clutter.",
+    "design_colors": {
+      "light_blocks": "#ffffff",
+      "dark_blocks": "#0f172a",
+      "NO_gray_blocks": "REMOVED \u2014 was causing visual chaos"
+    },
+    "colors": {
+      "background": "#ffffff",
+      "surface": "#f5f7fa",
+      "border": "#eef1f5",
+      "accent": "#05A584",
+      "text_primary": "#0f172a",
+      "text_secondary": "#738094",
+      "bullish": "#05A584",
+      "bearish": "#ef4444",
+      "trigger_breakout": "#22c55e",
+      "trigger_breakdown": "#ef4444",
+      "trigger_invalidation": "#f97316",
+      "state_clear": "#22c55e",
+      "state_conflicted": "#ef4444",
+      "state_compression": "#3b82f6",
+      "state_weak": "#eab308"
+    }
+  }
+}
